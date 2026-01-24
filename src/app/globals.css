@@ -2,17 +2,17 @@
 
 :root {
   /* Design Tokens - Colors - Updated Coolors Palette */
-  /* Primary: Lilac Ash (#ab9f9d) */
-  --color-primary-50: #f5f4f4;
-  --color-primary-100: #ebe9e9;
-  --color-primary-200: #d7d3d3;
-  --color-primary-300: #c3bdbd;
-  --color-primary-400: #afa7a7;
-  --color-primary-500: #ab9f9d;
-  --color-primary-600: #897f7e;
-  --color-primary-700: #675f5e;
-  --color-primary-800: #453f3f;
-  --color-primary-900: #231f1f;
+  /* Primary: Darker shade (#a99985) */
+  --color-primary-50: #f5f4f2;
+  --color-primary-100: #ebe9e5;
+  --color-primary-200: #d7d3cb;
+  --color-primary-300: #c3bdb1;
+  --color-primary-400: #afa797;
+  --color-primary-500: #a99985;
+  --color-primary-600: #877a6a;
+  --color-primary-700: #655b4f;
+  --color-primary-800: #433c34;
+  --color-primary-900: #211e1a;
   
   /* Secondary: Pale Oak (#d1beb0) */
   --color-secondary-50: #f5f4f3;
@@ -280,7 +280,7 @@ button.bg-accent-700 {
   justify-content: center;
   padding: 1rem 3rem;
   color: #f4f3ee !important;
-  background: var(--color-accent-500) !important;
+  background: var(--color-primary-500) !important;
   border: 2px solid #f4f3ee !important;
   border-radius: 9999px;
   font-size: 1rem;
@@ -291,12 +291,12 @@ button.bg-accent-700 {
 }
 
 .spwidget-button:hover {
-  background: var(--color-accent-600) !important;
+  background: var(--color-primary-600) !important;
   color: #f4f3ee !important;
 }
 
 .spwidget-button:active {
-  background: var(--color-accent-600) !important;
+  background: var(--color-primary-600) !important;
   color: #f4f3ee !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .15) inset;
 }
