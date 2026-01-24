@@ -51,11 +51,11 @@ export default function Home() {
         </section>
 
         {/* Services Section - Overlapping the hero */}
-        <section className="bg-neutral-50 -mt-24 md:-mt-32 pt-24 md:pt-32 pb-24 md:pb-32 w-full relative z-10">
+        <section className="relative -mt-24 md:-mt-32 pt-24 md:pt-32 pb-24 md:pb-32 w-full z-10">
           <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
               {/* Postpartum Support */}
-              <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-left">
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center">
                 <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
                   Postpartum Support
                 </h3>
@@ -71,7 +71,7 @@ export default function Home() {
               </div>
 
               {/* Anxiety Relief */}
-              <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-left">
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center">
                 <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
                   Anxiety Relief
                 </h3>
@@ -84,7 +84,7 @@ export default function Home() {
               </div>
 
               {/* Life Transitions */}
-              <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-left">
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center">
                 <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
                   Life Transitions
                 </h3>
