@@ -16,7 +16,7 @@ export default function Contact() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Contact Information */}
-              <div>
+              <div className="text-center md:text-left">
                 <h2 className="text-2xl font-semibold text-primary-600 mb-6 font-serif">
                   Get in Touch
                 </h2>
@@ -52,11 +52,11 @@ export default function Contact() {
               </div>
 
               {/* Office Information */}
-              <div>
+              <div className="text-center md:text-left">
                 <h2 className="text-2xl font-semibold text-primary-600 mb-6 font-serif">
                   Office Hours
                 </h2>
-                <div className="bg-neutral-50 rounded-lg p-6">
+                <div className="bg-neutral-50 rounded-lg p-6 md:p-8">
                   <p className="text-neutral-700 mb-4">
                     Please contact us to schedule an appointment. We offer both in-person 
                     and telehealth sessions to accommodate your needs.
