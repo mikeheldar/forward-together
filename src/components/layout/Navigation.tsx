@@ -46,21 +46,22 @@ export function Navigation() {
                 className={cn(
                   'px-4 py-2 text-sm font-medium transition-colors whitespace-nowrap font-sans rounded-lg',
                   pathname === item.href
-                    ? 'border-b-2'
+                    ? 'underline'
                     : ''
                 )}
                 style={{
-                  color: pathname === item.href ? '#3c4f76' : '#383f51',
-                  borderColor: pathname === item.href ? '#3c4f76' : 'transparent'
+                  color: '#ab9f9d',
+                  textDecoration: pathname === item.href ? 'underline' : 'none',
+                  textUnderlineOffset: pathname === item.href ? '4px' : '0'
                 }}
                 onMouseEnter={(e) => {
                   if (pathname !== item.href) {
-                    e.currentTarget.style.color = '#3c4f76';
+                    e.currentTarget.style.opacity = '0.8';
                   }
                 }}
                 onMouseLeave={(e) => {
                   if (pathname !== item.href) {
-                    e.currentTarget.style.color = '#383f51';
+                    e.currentTarget.style.opacity = '1';
                   }
                 }}
               >
@@ -77,14 +78,14 @@ export function Navigation() {
                 paddingBottom: '0.875rem', 
                 fontSize: '0.875rem', 
                 color: '#f4f3ee', 
-                backgroundColor: '#3c4f76',
+                backgroundColor: '#ab9f9d',
                 fontFamily: 'var(--font-lato), Lato, sans-serif'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#303f5e';
+                e.currentTarget.style.backgroundColor = '#897f7e';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#3c4f76';
+                e.currentTarget.style.backgroundColor = '#ab9f9d';
               }}
             >
               Get Started
@@ -94,12 +95,12 @@ export function Navigation() {
           {/* Mobile menu button */}
           <button
             className="md:hidden p-2 rounded-md focus:outline-none"
-            style={{ color: '#383f51' }}
+            style={{ color: '#ab9f9d' }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.color = '#3c4f76';
+              e.currentTarget.style.opacity = '0.8';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.color = '#383f51';
+              e.currentTarget.style.opacity = '1';
             }}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
@@ -139,12 +140,14 @@ export function Navigation() {
                     : ''
                 )}
                 style={{
-                  backgroundColor: pathname === item.href ? '#3c4f76' : 'transparent',
-                  color: pathname === item.href ? '#f4f3ee' : '#383f51'
+                  backgroundColor: pathname === item.href ? '#ab9f9d' : 'transparent',
+                  color: pathname === item.href ? '#f4f3ee' : '#ab9f9d',
+                  textDecoration: pathname === item.href ? 'underline' : 'none',
+                  textUnderlineOffset: pathname === item.href ? '4px' : '0'
                 }}
                 onMouseEnter={(e) => {
                   if (pathname !== item.href) {
-                    e.currentTarget.style.backgroundColor = '#dddbf1';
+                    e.currentTarget.style.backgroundColor = '#d7d3d3';
                   }
                 }}
                 onMouseLeave={(e) => {
@@ -167,7 +170,7 @@ export function Navigation() {
                 paddingBottom: '0.875rem', 
                 fontSize: '0.875rem', 
                 color: '#f4f3ee', 
-                backgroundColor: '#3c4f76',
+                backgroundColor: '#ab9f9d',
                 fontFamily: 'var(--font-lato), Lato, sans-serif'
               }}
             >
