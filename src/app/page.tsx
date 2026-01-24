@@ -29,14 +29,14 @@ export default function Home() {
           
           {/* Content */}
           <div className="relative z-10 container mx-auto px-6 md:px-8 max-w-5xl">
-            <div className="flex flex-col items-start text-left py-16 md:py-20">
+            <div className="flex flex-col items-center text-center py-16 md:py-20">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight font-serif">
                 Forward Together
               </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl text-white mb-12 max-w-3xl leading-relaxed font-sans">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white mb-12 max-w-3xl mx-auto leading-relaxed font-sans">
                 Compassionate counseling for women at every life stage.
               </p>
-              <div className="flex justify-start">
+              <div className="flex justify-center">
                 <Button 
                   href="/contact" 
                   variant="primary" 
