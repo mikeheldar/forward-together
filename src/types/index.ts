@@ -15,6 +15,7 @@ export interface Testimonial {
   quote: string;
   author: string;
   rating?: number;
+  image?: string;
 }
 
 export interface ContactInfo {

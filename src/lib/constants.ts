@@ -68,12 +68,14 @@ export const testimonials: Testimonial[] = [
     quote: 'Forward Together has been a lifesaver for my postpartum anxiety. Highly recommend Shelly for compassionate support!',
     author: 'Emily R.',
     rating: 5,
+    image: '/images/IMG_2286.jpeg',
   },
   {
     id: 'sarah-l',
     quote: 'The therapy sessions helped me navigate grief and find peace. Truly a supportive environment for healing.',
     author: 'Sarah L.',
     rating: 5,
+    image: '/images/IMG_2281.jpeg',
   },
 ];
 

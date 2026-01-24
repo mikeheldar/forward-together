@@ -96,66 +96,76 @@ export default function Home() {
         <section className="bg-background-default pt-24 md:pt-32 w-full rounded-lg">
         </section>
 
-        {/* Who We Are Section - Three Column Layout */}
-        <section className="bg-background-default pt-[30px] pb-32 md:pb-40 mb-[30px] w-full">
+        {/* Who We Are Section - Image Left, Text Right */}
+        <section className="bg-background-default pt-[30px] pb-16 md:pb-24 mb-[30px] w-full">
           <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
-              {/* Left Image */}
-              <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden">
-                <Image
-                  src="/images/IMG_2286.jpeg"
-                  alt="Woman with laptop in comfortable setting"
-                  fill
-                  className="object-cover object-center rounded-xl"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+              {/* Left Images - Stacked */}
+              <div className="space-y-6">
+                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+                  <Image
+                    src="/images/IMG_2286.jpeg"
+                    alt="Woman with laptop in comfortable setting"
+                    fill
+                    className="object-cover object-center rounded-xl"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+                  <Image
+                    src="/images/IMG_2281.jpeg"
+                    alt="Supportive connection and community"
+                    fill
+                    className="object-cover object-center rounded-xl"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
               </div>
 
-              {/* Center Text Block */}
-              <div className="flex flex-col items-start text-left px-4 md:px-8 rounded-lg">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 md:mb-8 font-heading" style={{ color: '#383f51' }}>
+              {/* Right Text Block */}
+              <div className="flex flex-col items-start text-left">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading" style={{ color: '#383f51' }}>
                   Who We Are
                 </h2>
-                <p className="text-lg md:text-xl lg:text-2xl leading-relaxed" style={{ color: '#383f51' }}>
+                <p className="text-base md:text-lg leading-relaxed" style={{ color: '#383f51' }}>
                   We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life's transitions.
                 </p>
-              </div>
-
-              {/* Right Image */}
-              <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden">
-                <Image
-                  src="/images/IMG_2281.jpeg"
-                  alt="Supportive connection and community"
-                  fill
-                  className="object-cover object-center rounded-xl"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
               </div>
             </div>
           </div>
         </section>
 
         {/* Testimonials Section */}
-        <section className="bg-background-muted py-32 md:py-40 pb-[50px] w-full rounded-lg">
+        <section className="bg-background-muted py-16 md:py-24 pb-[50px] w-full rounded-lg">
           <div className="max-w-6xl mx-auto px-6 md:px-8 w-full">
-            <h2 className="text-4xl md:text-5xl font-bold mb-20 text-left font-heading" style={{ color: '#383f51' }}>
-              What Clients Say
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               {testimonials.map((testimonial) => {
                 return (
-                  <div key={testimonial.id} className="bg-white rounded-xl shadow-sm flex flex-col p-10 md:p-12">
-                    <div className="flex items-center justify-center mb-6">
-                      {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
-                        <span key={i} className="text-yellow-400 text-2xl">★</span>
-                      ))}
+                  <div key={testimonial.id} className="flex flex-col items-start text-left">
+                    <p className="mb-6 italic leading-relaxed text-base md:text-lg" style={{ color: '#383f51' }}>
+                      {testimonial.quote}
+                    </p>
+                    <div className="flex items-center gap-4">
+                      <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                        <Image
+                          src={testimonial.image || '/images/IMG_2286.jpeg'}
+                          alt={testimonial.author}
+                          fill
+                          className="object-cover"
+                          sizes="64px"
+                        />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-base" style={{ color: '#3c4f76' }}>
+                          {testimonial.author}
+                        </p>
+                        <div className="flex items-center mt-1">
+                          {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
+                            <span key={i} className="text-yellow-400 text-sm">★</span>
+                          ))}
+                        </div>
+                      </div>
                     </div>
-                    <p className="mb-8 italic flex-grow leading-relaxed text-lg text-left" style={{ color: '#383f51' }}>
-                      "{testimonial.quote}"
-                    </p>
-                    <p className="font-semibold text-left text-lg" style={{ color: '#3c4f76' }}>
-                      — {testimonial.author}
-                    </p>
                   </div>
                 );
               })}
