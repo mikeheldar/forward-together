@@ -94,16 +94,41 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Who We Are Section */}
+        {/* Who We Are Section - Three Column Layout */}
         <section className="bg-white py-24 md:py-32">
-          <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-            <div className="flex flex-col items-center text-center">
-              <h2 className="text-4xl md:text-5xl font-bold text-[#284c61] mb-10">
-                Who We Are
-              </h2>
-              <p className="text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl">
-                We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life's transitions.
-              </p>
+          <div className="container mx-auto px-6 md:px-8 max-w-7xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
+              {/* Left Image */}
+              <div className="relative w-full aspect-square rounded-lg overflow-hidden">
+                <Image
+                  src="/images/IMG_2286.jpeg"
+                  alt="Woman with laptop in comfortable setting"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+
+              {/* Center Text Block */}
+              <div className="flex flex-col items-center text-center px-4 md:px-8">
+                <h2 className="text-4xl md:text-5xl font-bold text-[#284c61] mb-6 md:mb-8">
+                  Who We Are
+                </h2>
+                <p className="text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed">
+                  We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life's transitions.
+                </p>
+              </div>
+
+              {/* Right Image */}
+              <div className="relative w-full aspect-square rounded-lg overflow-hidden">
+                <Image
+                  src="/images/IMG_2281.jpeg"
+                  alt="Supportive connection and community"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
             </div>
           </div>
         </section>
