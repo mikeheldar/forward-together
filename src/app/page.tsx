@@ -28,7 +28,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-primary-700/70 z-0"></div>
           
           {/* Content */}
-          <div className="relative z-10 container mx-auto px-6 md:px-8 max-w-5xl">
+          <div className="relative z-10 w-full max-w-5xl mx-auto px-6 md:px-8">
             <div className="flex flex-col items-center text-center py-16 md:py-20">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight font-serif">
                 Forward Together
@@ -52,7 +52,7 @@ export default function Home() {
 
         {/* Services Section */}
         <section className="bg-neutral-50 py-24 md:py-32">
-          <div className="container mx-auto px-6 md:px-8 max-w-7xl">
+          <div className="w-full max-w-7xl mx-auto px-6 md:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-6xl mx-auto">
               {/* Postpartum Support */}
               <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-left">
@@ -101,7 +101,7 @@ export default function Home() {
 
         {/* Who We Are Section - Three Column Layout */}
         <section className="bg-white py-24 md:py-32">
-          <div className="container mx-auto px-6 md:px-8 max-w-7xl">
+          <div className="w-full max-w-7xl mx-auto px-6 md:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
               {/* Left Image */}
               <div className="relative w-full aspect-square rounded-xl overflow-hidden">
@@ -140,7 +140,7 @@ export default function Home() {
 
         {/* Testimonials Section */}
         <section className="bg-neutral-50 py-24 md:py-32">
-          <div className="container mx-auto px-6 md:px-8 max-w-6xl">
+          <div className="w-full max-w-6xl mx-auto px-6 md:px-8">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-20 text-left font-serif">
                 What Clients Say

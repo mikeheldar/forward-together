@@ -8,7 +8,7 @@ export default function Contact() {
       <Header />
       
       <main className="flex-grow py-16 md:py-24">
-        <div className="container mx-auto px-6 md:px-8 max-w-6xl">
+        <div className="w-full max-w-6xl mx-auto px-6 md:px-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-12 text-left font-serif">
               Contact Us
