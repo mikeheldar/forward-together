@@ -163,33 +163,33 @@
   --font-mono: var(--font-mono);
 }
 
-body {
-  background: var(--color-background-default);
-  color: var(--color-text-primary);
-  font-family: var(--font-body) !important;
-  line-height: 1.6;
+/* Force Lato for all body text - highest specificity */
+* {
+  font-family: var(--font-lato), "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
-/* All headings use Open Sans */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading) !important;
+/* Force Open Sans for all headings - override the * selector with higher specificity */
+html h1, html h2, html h3, html h4, html h5, html h6,
+html h1 *, html h2 *, html h3 *, html h4 *, html h5 *, html h6 *,
+html .font-heading,
+html .font-heading * {
+  font-family: var(--font-open-sans), "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
   font-weight: 700;
   line-height: 1.2;
 }
 
-/* All paragraphs and body text use Lato */
-p, span, div, a, button, li, td, th, label, input, textarea, select {
-  font-family: var(--font-body) !important;
+/* Force Lato for body and all text elements with high specificity */
+html body,
+html p, html span, html div, html a, html button, html li, html td, html th, html label, html input, html textarea, html select,
+html .font-sans, html .font-body,
+html .font-sans *, html .font-body * {
+  font-family: var(--font-lato), "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
-/* Headings with font-heading class */
-.font-heading {
-  font-family: var(--font-heading) !important;
-}
-
-/* Body text with font-sans class */
-.font-sans, .font-body {
-  font-family: var(--font-body) !important;
+body {
+  background: var(--color-background-default);
+  color: var(--color-text-primary);
+  line-height: 1.6;
 }
 
 * {
