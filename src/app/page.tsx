@@ -35,7 +35,7 @@ export default function Home() {
               <p className="text-xl md:text-2xl lg:text-3xl mb-12 max-w-3xl mx-auto leading-relaxed font-sans" style={{ color: '#f4f3ee' }}>
                 Compassionate counseling for women at every life stage.
               </p>
-              <div className="flex justify-center mb-12 mt-[10px]">
+              <div className="flex justify-center mb-12 mt-[20px]">
                 <div className="spwidget-button-wrapper">
                   <a 
                     href="https://shelly-eisenstadt.clientsecure.me" 
