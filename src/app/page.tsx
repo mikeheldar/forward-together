@@ -29,14 +29,14 @@ export default function Home() {
           
           {/* Content */}
           <div className="relative z-10 container mx-auto px-6 md:px-8 max-w-5xl">
-            <div className="flex flex-col items-center justify-center text-center py-16 md:py-20">
+            <div className="flex flex-col items-start text-left py-16 md:py-20">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight font-serif">
                 Forward Together
               </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl text-white mb-12 max-w-3xl mx-auto leading-relaxed font-sans">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white mb-12 max-w-3xl leading-relaxed font-sans">
                 Compassionate counseling for women at every life stage.
               </p>
-              <div className="flex justify-center">
+              <div className="flex justify-start">
                 <Button 
                   href="/contact" 
                   variant="primary" 
@@ -53,9 +53,9 @@ export default function Home() {
         {/* Services Section */}
         <section className="bg-neutral-50 py-24 md:py-32">
           <div className="container mx-auto px-6 md:px-8 max-w-7xl">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-6xl mx-auto mb-0">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-6xl mx-auto">
               {/* Postpartum Support */}
-              <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-left">
                 <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
                   Postpartum Support
                 </h3>
@@ -71,7 +71,7 @@ export default function Home() {
               </div>
 
               {/* Anxiety Relief */}
-              <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-left">
                 <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
                   Anxiety Relief
                 </h3>
@@ -84,7 +84,7 @@ export default function Home() {
               </div>
 
               {/* Life Transitions */}
-              <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-left">
                 <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
                   Life Transitions
                 </h3>
@@ -115,7 +115,7 @@ export default function Home() {
               </div>
 
               {/* Center Text Block */}
-              <div className="flex flex-col items-center text-center px-4 md:px-8">
+              <div className="flex flex-col items-start text-left px-4 md:px-8">
                 <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-6 md:mb-8 font-serif">
                   Who We Are
                 </h2>
@@ -141,27 +141,29 @@ export default function Home() {
         {/* Testimonials Section */}
         <section className="bg-neutral-50 py-24 md:py-32">
           <div className="container mx-auto px-6 md:px-8 max-w-6xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-20 text-center font-serif">
-              What Clients Say
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-5xl mx-auto">
-              {testimonials.map((testimonial) => {
-                return (
-                  <div key={testimonial.id} className="bg-white rounded-xl shadow-sm flex flex-col p-10 md:p-12">
-                    <div className="flex items-center justify-center mb-6">
-                      {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
-                        <span key={i} className="text-yellow-400 text-2xl">★</span>
-                      ))}
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-20 text-left font-serif">
+                What Clients Say
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                {testimonials.map((testimonial) => {
+                  return (
+                    <div key={testimonial.id} className="bg-white rounded-xl shadow-sm flex flex-col p-10 md:p-12">
+                      <div className="flex items-center justify-center mb-6">
+                        {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
+                          <span key={i} className="text-yellow-400 text-2xl">★</span>
+                        ))}
+                      </div>
+                      <p className="text-neutral-700 mb-8 italic flex-grow leading-relaxed text-lg text-left">
+                        "{testimonial.quote}"
+                      </p>
+                      <p className="text-neutral-600 font-semibold text-left text-lg">
+                        — {testimonial.author}
+                      </p>
                     </div>
-                    <p className="text-neutral-700 mb-8 italic flex-grow leading-relaxed text-lg text-center">
-                      "{testimonial.quote}"
-                    </p>
-                    <p className="text-neutral-600 font-semibold text-center text-lg">
-                      — {testimonial.author}
-                    </p>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
           </div>
         </section>

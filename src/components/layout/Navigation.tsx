@@ -55,8 +55,8 @@ export function Navigation() {
             ))}
             <Link
               href="/contact"
-              className="ml-2 px-12 py-4 bg-secondary-500 text-white rounded-full hover:bg-secondary-600 transition-colors text-sm font-semibold whitespace-nowrap font-sans"
-              style={{ paddingLeft: '3rem', paddingRight: '3rem', paddingTop: '1rem', paddingBottom: '1rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-montserrat), Montserrat, sans-serif' }}
+              className="ml-2 px-10 py-3.5 bg-secondary-500 text-white rounded-full hover:bg-secondary-600 transition-colors text-sm font-semibold whitespace-nowrap font-sans"
+              style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '0.875rem', paddingBottom: '0.875rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-montserrat), Montserrat, sans-serif' }}
             >
               Get Started
             </Link>
@@ -109,8 +109,8 @@ export function Navigation() {
             <Link
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-12 py-4 mt-2 bg-secondary-500 text-white rounded-full text-center text-sm font-semibold hover:bg-secondary-600 font-sans"
-              style={{ paddingLeft: '3rem', paddingRight: '3rem', paddingTop: '1rem', paddingBottom: '1rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-montserrat), Montserrat, sans-serif' }}
+              className="block px-10 py-3.5 mt-2 bg-secondary-500 text-white rounded-full text-center text-sm font-semibold hover:bg-secondary-600 font-sans"
+              style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '0.875rem', paddingBottom: '0.875rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-montserrat), Montserrat, sans-serif' }}
             >
               Get Started
             </Link>
