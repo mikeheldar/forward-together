@@ -12,7 +12,7 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section with Background Image */}
-        <section className="relative bg-primary-700 min-h-[600px] md:min-h-[700px] flex items-center justify-center overflow-hidden">
+        <section className="relative bg-primary-700 min-h-[600px] md:min-h-[700px] flex items-center justify-center overflow-hidden pb-32 md:pb-40">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -50,8 +50,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Services Section */}
-        <section className="bg-neutral-50 py-24 md:py-32 w-full">
+        {/* Services Section - Overlapping the hero */}
+        <section className="bg-neutral-50 -mt-24 md:-mt-32 pt-24 md:pt-32 pb-24 md:pb-32 w-full relative z-10">
           <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
               {/* Postpartum Support */}
@@ -100,16 +100,16 @@ export default function Home() {
         </section>
 
         {/* Who We Are Section - Three Column Layout */}
-        <section className="bg-white py-24 md:py-32 w-full">
+        <section className="bg-white py-32 md:py-40 w-full">
           <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
               {/* Left Image */}
-              <div className="relative w-full aspect-square rounded-xl overflow-hidden">
+              <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden">
                 <Image
                   src="/images/IMG_2286.jpeg"
                   alt="Woman with laptop in comfortable setting"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
@@ -125,12 +125,12 @@ export default function Home() {
               </div>
 
               {/* Right Image */}
-              <div className="relative w-full aspect-square rounded-xl overflow-hidden">
+              <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden">
                 <Image
                   src="/images/IMG_2281.jpeg"
                   alt="Supportive connection and community"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
@@ -139,7 +139,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="bg-neutral-50 py-24 md:py-32 w-full">
+        <section className="bg-neutral-50 py-32 md:py-40 w-full">
           <div className="max-w-6xl mx-auto px-6 md:px-8 w-full">
             <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-20 text-left font-serif">
               What Clients Say
