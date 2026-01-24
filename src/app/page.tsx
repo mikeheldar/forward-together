@@ -50,9 +50,9 @@ export default function Home() {
           </div>
 
           {/* Services Boxes - Floating over the background */}
-          <div className="absolute bottom-0 left-0 right-0 z-20 pb-8 md:pb-12">
-            <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+          <div className="absolute bottom-[15%] left-0 right-0 z-20 w-full">
+            <div className="max-w-7xl mx-auto px-6 md:px-8 w-full flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 w-full max-w-6xl">
                 {/* Postpartum Support */}
                 <div className="bg-secondary-500/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center border border-white/20">
                   <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-serif">
