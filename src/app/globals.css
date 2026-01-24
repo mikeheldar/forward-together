@@ -2,17 +2,17 @@
 
 :root {
   /* Design Tokens - Colors - Updated Coolors Palette */
-  /* Primary: Darker shade (#a99985) */
-  --color-primary-50: #f5f4f2;
-  --color-primary-100: #ebe9e5;
-  --color-primary-200: #d7d3cb;
-  --color-primary-300: #c3bdb1;
-  --color-primary-400: #afa797;
-  --color-primary-500: #a99985;
-  --color-primary-600: #877a6a;
-  --color-primary-700: #655b4f;
-  --color-primary-800: #433c34;
-  --color-primary-900: #211e1a;
+  /* Primary: Brownish Taupe (#8b7e74) */
+  --color-primary-50: #f3f2f1;
+  --color-primary-100: #e7e5e3;
+  --color-primary-200: #cfcbc7;
+  --color-primary-300: #b7b1ab;
+  --color-primary-400: #9f978f;
+  --color-primary-500: #8b7e74;
+  --color-primary-600: #6f655d;
+  --color-primary-700: #534c46;
+  --color-primary-800: #37322e;
+  --color-primary-900: #1c1917;
   
   /* Secondary: Pale Oak (#d1beb0) */
   --color-secondary-50: #f5f4f3;
