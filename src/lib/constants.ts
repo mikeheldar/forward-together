@@ -64,15 +64,15 @@ export const therapeuticApproaches: TherapeuticApproach[] = [
 
 export const testimonials: Testimonial[] = [
   {
-    id: 'laura-m',
-    quote: 'Working with Shelly was exactly what I needed in early motherhood, juggling a 2- and 4-year-old and a full-time job. She helped me find confidence in myself as a new(ish) mom and supported me through the emotional ups and downs of this phase of life.',
-    author: 'Laura M.',
+    id: 'emily-r',
+    quote: 'Forward Together has been a lifesaver for my postpartum anxiety. Highly recommend Shelly for compassionate support!',
+    author: 'Emily R.',
     rating: 5,
   },
   {
-    id: 'kaitlyn-h',
-    quote: 'Shelly walked with me through the fear and trauma of my son\'s critical heart condition—from diagnosis in pregnancy to life after birth. Her compassion helped me survive, heal, and rediscover myself as both a woman and a mother. I can\'t recommend her enough!',
-    author: 'Kaitlyn H.',
+    id: 'sarah-l',
+    quote: 'The therapy sessions helped me navigate grief and find peace. Truly a supportive environment for healing.',
+    author: 'Sarah L.',
     rating: 5,
   },
 ];

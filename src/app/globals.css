@@ -33,7 +33,6 @@
   --color-background: var(--color-background);
   --color-foreground: var(--color-foreground);
   --font-sans: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mono: var(--font-geist-mono);
 }
 
 body {

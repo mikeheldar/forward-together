@@ -7,7 +7,7 @@ export const siteConfig: SiteConfig = {
     credentials: 'LCSW',
   },
   contact: {
-    phone: '770.609.7539',
+    phone: '404-793-6419',
     email: 'shelly@forwardtogetherga.com',
     address: {
       street: '5775 Glenridge Drive, Building B, Suite 310',

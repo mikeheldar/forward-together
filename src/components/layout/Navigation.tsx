@@ -8,9 +8,6 @@ import { cn } from '@/lib/utils';
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/services', label: 'Services' },
-  { href: '/testimonials', label: 'Testimonials' },
-  { href: '/location', label: 'Location' },
   { href: '/contact', label: 'Contact' },
   { href: '/faq', label: 'FAQ' },
 ];
@@ -20,11 +17,11 @@ export function Navigation() {
   const pathname = usePathname();
   
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-[#284c61]">
+          <Link href="/" className="text-2xl font-bold text-[#284c61] hover:text-[#0b8aa6] transition-colors">
             Forward Together
           </Link>
           
@@ -44,6 +41,12 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href="/contact"
+              className="ml-4 px-6 py-2 bg-[#0b8aa6] text-white rounded-full hover:bg-[#096e85] transition-colors text-sm font-medium"
+            >
+              Get Started
+            </Link>
           </div>
           
           {/* Mobile menu button */}
@@ -90,11 +93,16 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href="/contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 mt-2 bg-[#0b8aa6] text-white rounded-full text-center text-base font-medium hover:bg-[#096e85]"
+            >
+              Get Started
+            </Link>
           </div>
         </div>
       )}
     </nav>
   );
 }
-
-
