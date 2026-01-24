@@ -7,30 +7,30 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-background-default flex flex-col">
       <Header />
       
       <main className="flex-grow">
         {/* Hero Section with Background Image */}
-        <section className="relative bg-[#284c61] min-h-[600px] md:min-h-[700px] flex items-center justify-center overflow-hidden">
+        <section className="relative bg-primary-700 min-h-[600px] md:min-h-[700px] flex items-center justify-center overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/intro-background.jpg"
               alt="A living room with two chairs and a couch"
               fill
-              className="object-cover"
+              className="object-cover rounded-lg"
               priority
               sizes="100vw"
             />
           </div>
           {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-[#284c61]/70 z-0"></div>
+          <div className="absolute inset-0 bg-primary-700/70 z-0"></div>
           
           {/* Content */}
           <div className="relative z-10 container mx-auto px-6 md:px-8 max-w-5xl">
             <div className="flex flex-col items-center justify-center text-center py-16 md:py-20">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight font-serif">
                 Forward Together
               </h1>
               <p className="text-xl md:text-2xl lg:text-3xl text-white mb-12 max-w-3xl mx-auto leading-relaxed">
@@ -46,47 +46,47 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section className="bg-gray-50 py-24 md:py-32">
+        <section className="bg-neutral-50 py-24 md:py-32">
           <div className="container mx-auto px-6 md:px-8 max-w-7xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
               {/* Postpartum Support */}
               <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-center">
-                <h3 className="text-2xl md:text-3xl font-semibold text-[#284c61] mb-6">
+                <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
                   Postpartum Support
                 </h3>
-                <p className="text-gray-700 mb-4 text-lg leading-relaxed">
+                <p className="text-neutral-700 mb-4 text-lg leading-relaxed">
                   Guidance through motherhood and emotional challenges.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-neutral-600 leading-relaxed">
                   With support and the right tools, you can learn to quiet your mind and move forward with confidence.
                 </p>
-                <p className="text-gray-600 mt-6 leading-relaxed">
+                <p className="text-neutral-600 mt-6 leading-relaxed">
                   Change can be overwhelming—but you don't have to navigate it alone.
                 </p>
               </div>
 
               {/* Anxiety Relief */}
               <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-center">
-                <h3 className="text-2xl md:text-3xl font-semibold text-[#284c61] mb-6">
+                <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
                   Anxiety Relief
                 </h3>
-                <p className="text-gray-700 mb-4 text-lg leading-relaxed">
+                <p className="text-neutral-700 mb-4 text-lg leading-relaxed">
                   Expert support for managing anxiety and stress.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-neutral-600 leading-relaxed">
                   Learn effective strategies to manage anxiety and find peace in your daily life.
                 </p>
               </div>
 
               {/* Life Transitions */}
               <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-center">
-                <h3 className="text-2xl md:text-3xl font-semibold text-[#284c61] mb-6">
+                <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
                   Life Transitions
                 </h3>
-                <p className="text-gray-700 mb-4 text-lg leading-relaxed">
+                <p className="text-neutral-700 mb-4 text-lg leading-relaxed">
                   Support through life's major changes and challenges.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-neutral-600 leading-relaxed">
                   Navigate career changes, relationships, and personal growth with confidence.
                 </p>
               </div>
@@ -99,7 +99,7 @@ export default function Home() {
           <div className="container mx-auto px-6 md:px-8 max-w-7xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
               {/* Left Image */}
-              <div className="relative w-full aspect-square rounded-lg overflow-hidden">
+              <div className="relative w-full aspect-square rounded-xl overflow-hidden">
                 <Image
                   src="/images/IMG_2286.jpeg"
                   alt="Woman with laptop in comfortable setting"
@@ -111,16 +111,16 @@ export default function Home() {
 
               {/* Center Text Block */}
               <div className="flex flex-col items-center text-center px-4 md:px-8">
-                <h2 className="text-4xl md:text-5xl font-bold text-[#284c61] mb-6 md:mb-8">
+                <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-6 md:mb-8 font-serif">
                   Who We Are
                 </h2>
-                <p className="text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed">
+                <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-relaxed">
                   We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life's transitions.
                 </p>
               </div>
 
               {/* Right Image */}
-              <div className="relative w-full aspect-square rounded-lg overflow-hidden">
+              <div className="relative w-full aspect-square rounded-xl overflow-hidden">
                 <Image
                   src="/images/IMG_2281.jpeg"
                   alt="Supportive connection and community"
@@ -134,9 +134,9 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="bg-gray-50 py-24 md:py-32">
+        <section className="bg-neutral-50 py-24 md:py-32">
           <div className="container mx-auto px-6 md:px-8 max-w-6xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#284c61] mb-20 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-20 text-center font-serif">
               What Clients Say
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
@@ -147,8 +147,8 @@ export default function Home() {
                   '/images/IMG_2294.jpeg',
                 ];
                 return (
-                  <div key={testimonial.id} className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col">
-                    <div className="relative w-full aspect-[4/3]">
+                  <div key={testimonial.id} className="bg-white rounded-xl overflow-hidden shadow-sm flex flex-col">
+                    <div className="relative w-full aspect-[4/3] rounded-t-xl overflow-hidden">
                       <Image
                         src={testimonialImages[index] || '/images/IMG_2291.jpeg'}
                         alt={`${testimonial.author} testimonial`}
@@ -163,10 +163,10 @@ export default function Home() {
                           <span key={i} className="text-yellow-400 text-2xl">★</span>
                         ))}
                       </div>
-                      <p className="text-gray-700 mb-8 italic flex-grow leading-relaxed text-lg text-center">
+                      <p className="text-neutral-700 mb-8 italic flex-grow leading-relaxed text-lg text-center">
                         "{testimonial.quote}"
                       </p>
-                      <p className="text-gray-600 font-semibold text-center text-lg">
+                      <p className="text-neutral-600 font-semibold text-center text-lg">
                         — {testimonial.author}
                       </p>
                     </div>

@@ -1,46 +1,158 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand Colors */
-  --color-primary-500: #284c61;
-  --color-primary-600: #244457;
-  --color-primary-700: #203d4e;
-  --color-primary-800: #1c3544;
-  --color-primary-900: #142631;
-  --color-secondary-400: #3ca1b8;
-  --color-secondary-500: #0b8aa6;
-  --color-secondary-700: #096e85;
-  --color-secondary-900: #064553;
-  --color-accent-500: #44ab89;
-  --color-accent-700: #36896e;
-  --color-accent-900: #225645;
+  /* Design Tokens - Colors */
+  --color-primary-50: #f5f5f0;
+  --color-primary-100: #e8e8d8;
+  --color-primary-200: #d1d1b1;
+  --color-primary-300: #b4b484;
+  --color-primary-400: #9a9a6a;
+  --color-primary-500: #3c3c2e;
+  --color-primary-600: #2d2d22;
+  --color-primary-700: #1f1f18;
+  --color-primary-800: #171712;
+  --color-primary-900: #0f0f0c;
   
-  /* Neutral Colors */
-  --color-background: #ffffff;
-  --color-foreground: #333333;
-  --color-gray-100: #f5f5f5;
-  --color-gray-200: #e5e5e5;
-  --color-gray-300: #d4d4d4;
-  --color-gray-400: #a3a3a3;
-  --color-gray-500: #737373;
-  --color-gray-600: #525252;
-  --color-gray-700: #404040;
-  --color-gray-800: #262626;
-  --color-gray-900: #171717;
+  --color-secondary-50: #f5f3f0;
+  --color-secondary-100: #e8e3d8;
+  --color-secondary-200: #d1c7b1;
+  --color-secondary-300: #b4a584;
+  --color-secondary-400: #9a8a6a;
+  --color-secondary-500: #6f675f;
+  --color-secondary-600: #5a544d;
+  --color-secondary-700: #45403b;
+  --color-secondary-800: #2f2c28;
+  --color-secondary-900: #1a1816;
+  
+  --color-accent-50: #f5f2ed;
+  --color-accent-100: #e8dfd1;
+  --color-accent-200: #d1bfa3;
+  --color-accent-300: #b49f75;
+  --color-accent-400: #9a8557;
+  --color-accent-500: #7d6b4a;
+  --color-accent-600: #64563c;
+  --color-accent-700: #4b402e;
+  --color-accent-800: #322b1f;
+  --color-accent-900: #191510;
+  
+  --color-neutral-50: #fafaf8;
+  --color-neutral-100: #f5f5f0;
+  --color-neutral-200: #e8e8e0;
+  --color-neutral-300: #d4d4c8;
+  --color-neutral-400: #a3a398;
+  --color-neutral-500: #73736a;
+  --color-neutral-600: #52524b;
+  --color-neutral-700: #40403a;
+  --color-neutral-800: #2d2d28;
+  --color-neutral-900: #1a1a17;
+  
+  /* Earth Tones */
+  --color-earth-charcoal: #1a1a17;
+  --color-earth-blueGrey: #3c4a52;
+  --color-earth-creamyBeige: #f5f5dc;
+  --color-earth-warmTan: #d4b896;
+  --color-earth-oliveBrown: #6f675f;
+  
+  /* Semantic Colors */
+  --color-semantic-success: #7d6b4a;
+  --color-semantic-error: #8b5a3c;
+  --color-semantic-warning: #9a8557;
+  --color-semantic-info: #6f675f;
+  
+  /* Background Colors */
+  --color-background-default: #ffffff;
+  --color-background-muted: #fafaf8;
+  --color-background-subtle: #f5f5f0;
+  
+  /* Text Colors */
+  --color-text-primary: #1a1a17;
+  --color-text-secondary: #40403a;
+  --color-text-tertiary: #73736a;
+  --color-text-inverse: #f5f5dc;
+  --color-text-muted: #52524b;
+  
+  /* Border Colors */
+  --color-border-default: #e8e8e0;
+  --color-border-muted: #d4d4c8;
+  --color-border-strong: #73736a;
+  
+  /* Typography */
+  --font-heading: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-body: var(--font-montserrat), "Montserrat", -apple-system, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, monospace;
 }
 
-@theme inline {
-  --color-background: var(--color-background);
-  --color-foreground: var(--color-foreground);
-  --font-sans: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-serif: Georgia, "Times New Roman", Times, serif;
+@theme {
+  /* Primary Colors */
+  --color-primary-50: var(--color-primary-50);
+  --color-primary-100: var(--color-primary-100);
+  --color-primary-200: var(--color-primary-200);
+  --color-primary-300: var(--color-primary-300);
+  --color-primary-400: var(--color-primary-400);
+  --color-primary-500: var(--color-primary-500);
+  --color-primary-600: var(--color-primary-600);
+  --color-primary-700: var(--color-primary-700);
+  --color-primary-800: var(--color-primary-800);
+  --color-primary-900: var(--color-primary-900);
+  
+  /* Secondary Colors */
+  --color-secondary-50: var(--color-secondary-50);
+  --color-secondary-100: var(--color-secondary-100);
+  --color-secondary-200: var(--color-secondary-200);
+  --color-secondary-300: var(--color-secondary-300);
+  --color-secondary-400: var(--color-secondary-400);
+  --color-secondary-500: var(--color-secondary-500);
+  --color-secondary-600: var(--color-secondary-600);
+  --color-secondary-700: var(--color-secondary-700);
+  --color-secondary-800: var(--color-secondary-800);
+  --color-secondary-900: var(--color-secondary-900);
+  
+  /* Accent Colors */
+  --color-accent-50: var(--color-accent-50);
+  --color-accent-100: var(--color-accent-100);
+  --color-accent-200: var(--color-accent-200);
+  --color-accent-300: var(--color-accent-300);
+  --color-accent-400: var(--color-accent-400);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
+  --color-accent-700: var(--color-accent-700);
+  --color-accent-800: var(--color-accent-800);
+  --color-accent-900: var(--color-accent-900);
+  
+  /* Neutral Colors */
+  --color-neutral-50: var(--color-neutral-50);
+  --color-neutral-100: var(--color-neutral-100);
+  --color-neutral-200: var(--color-neutral-200);
+  --color-neutral-300: var(--color-neutral-300);
+  --color-neutral-400: var(--color-neutral-400);
+  --color-neutral-500: var(--color-neutral-500);
+  --color-neutral-600: var(--color-neutral-600);
+  --color-neutral-700: var(--color-neutral-700);
+  --color-neutral-800: var(--color-neutral-800);
+  --color-neutral-900: var(--color-neutral-900);
+  
+  /* Background Colors */
+  --color-background-default: var(--color-background-default);
+  --color-background-muted: var(--color-background-muted);
+  --color-background-subtle: var(--color-background-subtle);
+  
+  /* Font Families */
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
+  --font-mono: var(--font-mono);
 }
 
 body {
-  background: var(--color-background);
-  color: var(--color-foreground);
-  font-family: var(--font-sans);
+  background: var(--color-background-default);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
   line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 * {

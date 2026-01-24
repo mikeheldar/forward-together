@@ -17,16 +17,16 @@ export function Button({
   className,
   ...props
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center font-medium rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2';
+  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2';
   
   const variants = {
-    primary: 'bg-[#0b8aa6] text-white hover:bg-[#096e85] focus:ring-[#0b8aa6]',
-    secondary: 'bg-[#284c61] text-white hover:bg-[#203d4e] focus:ring-[#284c61]',
-    outline: 'border-2 border-[#0b8aa6] text-[#0b8aa6] hover:bg-[#0b8aa6] hover:text-white focus:ring-[#0b8aa6]',
+    primary: 'bg-secondary-500 text-white hover:bg-secondary-600 focus:ring-secondary-500',
+    secondary: 'bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-600',
+    outline: 'border-2 border-secondary-500 text-secondary-600 hover:bg-secondary-500 hover:text-white focus:ring-secondary-500',
   };
   
   const sizes = {
-    sm: 'px-4 py-2 text-sm',
+    sm: 'px-5 py-2.5 text-sm',
     md: 'px-6 py-3 text-base',
     lg: 'px-8 py-4 text-lg',
   };
@@ -52,5 +52,3 @@ export function Button({
     </button>
   );
 }
-
-

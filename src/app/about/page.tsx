@@ -5,29 +5,29 @@ import { siteConfig } from '@/lib/site-config';
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-background-default flex flex-col">
       <Header />
       
       <main className="flex-grow py-16 md:py-24">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6 md:px-8 max-w-6xl">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#284c61] mb-8 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-8 text-center font-serif">
               About Forward Together
             </h1>
             
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-semibold text-[#284c61] mb-6">
+              <h2 className="text-3xl font-semibold text-primary-600 mb-6 font-serif">
                 {aboutContent.heading}
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-neutral-700 leading-relaxed mb-6">
                 {aboutContent.text}
               </p>
 
-              <div className="mt-12 bg-gray-50 rounded-lg p-8">
-                <h3 className="text-2xl font-semibold text-[#284c61] mb-4">
+              <div className="mt-12 bg-neutral-50 rounded-lg p-8">
+                <h3 className="text-2xl font-semibold text-primary-600 mb-4 font-serif">
                   {siteConfig.therapist.name}, {siteConfig.therapist.credentials}
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-neutral-700">
                   I am a Licensed Clinical Social Worker (LCSW) dedicated to providing compassionate, 
                   evidence-based therapy for women navigating life's challenges. My approach is warm, 
                   collaborative, and tailored to your unique needs and goals.
@@ -42,4 +42,3 @@ export default function About() {
     </div>
   );
 }
-
