@@ -50,7 +50,7 @@ export default function Home() {
           </div>
 
           {/* Services Boxes - Floating over the background */}
-          <div className="absolute bottom-[40%] left-0 right-0 z-20 w-full -translate-y-[120px]">
+          <div className="absolute bottom-[40%] left-0 right-0 z-20 w-full -translate-y-[70px]">
             <div className="w-full flex justify-center">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-6xl px-6 md:px-8">
                 {/* Postpartum Support */}
