@@ -139,37 +139,21 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-20 text-center font-serif">
               What Clients Say
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
-              {testimonials.map((testimonial, index) => {
-                // Use different images for each testimonial if available
-                const testimonialImages = [
-                  '/images/IMG_2291.jpeg',
-                  '/images/IMG_2294.jpeg',
-                ];
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-5xl mx-auto">
+              {testimonials.map((testimonial) => {
                 return (
-                  <div key={testimonial.id} className="bg-white rounded-xl overflow-hidden shadow-sm flex flex-col">
-                    <div className="relative w-full aspect-[4/3] rounded-t-xl overflow-hidden">
-                      <Image
-                        src={testimonialImages[index] || '/images/IMG_2291.jpeg'}
-                        alt={`${testimonial.author} testimonial`}
-                        fill
-                        className="object-cover object-center"
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                      />
+                  <div key={testimonial.id} className="bg-white rounded-xl shadow-sm flex flex-col p-10 md:p-12">
+                    <div className="flex items-center justify-center mb-6">
+                      {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
+                        <span key={i} className="text-yellow-400 text-2xl">★</span>
+                      ))}
                     </div>
-                    <div className="p-10 md:p-12 flex flex-col flex-grow">
-                      <div className="flex items-center justify-center mb-6">
-                        {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
-                          <span key={i} className="text-yellow-400 text-2xl">★</span>
-                        ))}
-                      </div>
-                      <p className="text-neutral-700 mb-8 italic flex-grow leading-relaxed text-lg text-center">
-                        "{testimonial.quote}"
-                      </p>
-                      <p className="text-neutral-600 font-semibold text-center text-lg">
-                        — {testimonial.author}
-                      </p>
-                    </div>
+                    <p className="text-neutral-700 mb-8 italic flex-grow leading-relaxed text-lg text-center">
+                      "{testimonial.quote}"
+                    </p>
+                    <p className="text-neutral-600 font-semibold text-center text-lg">
+                      — {testimonial.author}
+                    </p>
                   </div>
                 );
               })}
