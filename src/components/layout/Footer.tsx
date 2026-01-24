@@ -3,7 +3,7 @@ import { siteConfig } from '@/lib/site-config';
 
 export function Footer() {
   return (
-    <footer className="bg-secondary-500 text-[#F5F5DC] font-serif">
+    <footer className="bg-secondary-500 text-[#F5F5DC]" style={{ fontFamily: 'var(--font-playfair), Playfair Display, Georgia, serif' }}>
       <div className="container mx-auto px-6 md:px-8 py-12 md:py-16">
         {/* Three Column Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-12 md:mb-16">

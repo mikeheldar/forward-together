@@ -133,14 +133,30 @@
 body {
   background: var(--color-background-default);
   color: var(--color-text-primary);
-  font-family: var(--font-body);
+  font-family: var(--font-body) !important;
   line-height: 1.6;
 }
 
+/* All headings use Playfair Display */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+  font-family: var(--font-heading) !important;
   font-weight: 700;
   line-height: 1.2;
+}
+
+/* All paragraphs and body text use Montserrat */
+p, span, div, a, button, li, td, th, label, input, textarea, select {
+  font-family: var(--font-body) !important;
+}
+
+/* Headings with font-serif class */
+.font-serif, .font-heading {
+  font-family: var(--font-heading) !important;
+}
+
+/* Body text with font-sans class */
+.font-sans, .font-body {
+  font-family: var(--font-body) !important;
 }
 
 * {

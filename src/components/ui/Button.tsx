@@ -17,7 +17,7 @@ export function Button({
   className,
   ...props
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2';
+  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 font-sans';
   
   const variants = {
     primary: 'bg-secondary-500 text-white hover:bg-secondary-600 hover:text-white focus:ring-secondary-500',
@@ -45,6 +45,7 @@ export function Button({
     paddingBottom: size === 'lg' ? '1.5rem' : '1.25rem',
     fontSize: size === 'lg' ? '1rem' : '0.875rem',
     color: '#ffffff',
+    fontFamily: 'var(--font-montserrat), Montserrat, sans-serif',
   };
   
   if (href) {

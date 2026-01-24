@@ -33,7 +33,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight font-serif">
                 Forward Together
               </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl text-white mb-12 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white mb-12 max-w-3xl mx-auto leading-relaxed font-sans">
                 Compassionate counseling for women at every life stage.
               </p>
               <div className="flex justify-center">

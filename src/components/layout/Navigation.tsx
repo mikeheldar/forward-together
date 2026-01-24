@@ -44,7 +44,7 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  'px-4 py-2 text-sm font-medium transition-colors whitespace-nowrap',
+                  'px-4 py-2 text-sm font-medium transition-colors whitespace-nowrap font-sans',
                   pathname === item.href
                     ? 'text-secondary-600 border-b-2 border-secondary-600'
                     : 'text-neutral-700 hover:text-secondary-600'
@@ -109,8 +109,8 @@ export function Navigation() {
             <Link
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-16 py-5 mt-2 bg-secondary-500 text-white rounded-full text-center text-sm font-semibold hover:bg-secondary-600"
-              style={{ paddingLeft: '4rem', paddingRight: '4rem', paddingTop: '1.25rem', paddingBottom: '1.25rem', fontSize: '0.875rem', color: '#ffffff' }}
+              className="block px-16 py-5 mt-2 bg-secondary-500 text-white rounded-full text-center text-sm font-semibold hover:bg-secondary-600 font-sans"
+              style={{ paddingLeft: '4rem', paddingRight: '4rem', paddingTop: '1.25rem', paddingBottom: '1.25rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-montserrat), Montserrat, sans-serif' }}
             >
               Get Started
             </Link>
