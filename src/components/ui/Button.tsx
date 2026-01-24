@@ -45,7 +45,7 @@ export function Button({
     paddingBottom: size === 'lg' ? '1rem' : '0.875rem',
     fontSize: size === 'lg' ? '1rem' : '0.875rem',
     color: '#ffffff',
-    fontFamily: 'var(--font-montserrat), Montserrat, sans-serif',
+    fontFamily: 'var(--font-lato), Lato, sans-serif',
   };
   
   if (href) {
