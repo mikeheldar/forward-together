@@ -1,9 +1,9 @@
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { Button } from '@/components/ui/Button';
 import { siteConfig } from '@/lib/site-config';
 import { testimonials, aboutContent } from '@/lib/constants';
 import Image from 'next/image';
+import Script from 'next/script';
 
 export default function Home() {
   return (
@@ -37,14 +37,21 @@ export default function Home() {
                 Compassionate counseling for women at every life stage.
               </p>
               <div className="flex justify-center mb-12">
-                <Button 
-                  href="/contact" 
-                  variant="primary" 
-                  size="lg"
-                  className="border-2 border-white"
-                >
-                  Request Appointment
-                </Button>
+                <div className="spwidget-button-wrapper">
+                  <a 
+                    href="https://shelly-eisenstadt.clientsecure.me" 
+                    className="spwidget-button" 
+                    data-spwidget-scope-id="f051a415-c531-4be3-99c8-807ad6df8c3f" 
+                    data-spwidget-scope-uri="shelly-eisenstadt" 
+                    data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
+                    data-spwidget-type="OAR" 
+                    data-spwidget-scope-global 
+                    data-spwidget-autobind
+                  >
+                    Request Appointment
+                  </a>
+                </div>
+                <Script src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js" strategy="afterInteractive" />
               </div>
             </div>
           </div>

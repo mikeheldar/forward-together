@@ -206,3 +206,30 @@ button.bg-primary-600,
 button.bg-primary-700 {
   color: #ffffff !important;
 }
+
+/* SimplePractice Appointment Request Widget Styles */
+.spwidget-button-wrapper {
+  text-align: center;
+}
+
+.spwidget-button {
+  display: inline-block;
+  padding: 6px 12px;
+  color: #1371C8;
+  background: #fff;
+  border: 1px solid #1371C8;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.spwidget-button:hover {
+  background: #fff;
+  color: #0F5AA0;
+}
+
+.spwidget-button:active {
+  color: rgba(255, 255, 255, .75) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .15) inset;
+}
