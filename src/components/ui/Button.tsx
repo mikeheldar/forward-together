@@ -26,9 +26,9 @@ export function Button({
   };
   
   const sizes = {
-    sm: 'px-8 py-2.5 text-sm',
-    md: 'px-10 py-3.5 text-base',
-    lg: 'px-12 py-4 text-lg',
+    sm: 'px-10 py-3 text-sm',
+    md: 'px-12 py-4 text-sm',
+    lg: 'px-14 py-4.5 text-base',
   };
   
   const classes = cn(
