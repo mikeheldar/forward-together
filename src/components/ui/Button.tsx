@@ -26,9 +26,9 @@ export function Button({
   };
   
   const sizes = {
-    sm: 'px-12 py-3.5 text-sm',
-    md: 'px-14 py-4.5 text-sm',
-    lg: 'px-16 py-5 text-base',
+    sm: 'px-16 py-5 text-sm',
+    md: 'px-16 py-5 text-sm',
+    lg: 'px-20 py-6 text-base',
   };
   
   const classes = cn(
@@ -38,16 +38,25 @@ export function Button({
     className
   );
   
+  const inlineStyles = {
+    paddingLeft: size === 'lg' ? '5rem' : '4rem',
+    paddingRight: size === 'lg' ? '5rem' : '4rem',
+    paddingTop: size === 'lg' ? '1.5rem' : '1.25rem',
+    paddingBottom: size === 'lg' ? '1.5rem' : '1.25rem',
+    fontSize: size === 'lg' ? '1rem' : '0.875rem',
+    color: '#ffffff',
+  };
+  
   if (href) {
     return (
-      <Link href={href} className={classes} style={{ color: '#ffffff' }}>
+      <Link href={href} className={classes} style={inlineStyles}>
         {children}
       </Link>
     );
   }
   
   return (
-    <button className={classes} style={{ color: '#ffffff' }} {...props}>
+    <button className={classes} style={inlineStyles} {...props}>
       {children}
     </button>
   );

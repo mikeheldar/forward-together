@@ -55,7 +55,8 @@ export function Navigation() {
             ))}
             <Link
               href="/contact"
-              className="ml-2 px-14 py-4.5 bg-secondary-500 text-white rounded-full hover:bg-secondary-600 transition-colors text-sm font-semibold whitespace-nowrap"
+              className="ml-2 px-16 py-5 bg-secondary-500 text-white rounded-full hover:bg-secondary-600 transition-colors text-sm font-semibold whitespace-nowrap"
+              style={{ paddingLeft: '4rem', paddingRight: '4rem', paddingTop: '1.25rem', paddingBottom: '1.25rem', fontSize: '0.875rem', color: '#ffffff' }}
             >
               Get Started
             </Link>
@@ -108,7 +109,8 @@ export function Navigation() {
             <Link
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-14 py-4.5 mt-2 bg-secondary-500 text-white rounded-full text-center text-sm font-semibold hover:bg-secondary-600"
+              className="block px-16 py-5 mt-2 bg-secondary-500 text-white rounded-full text-center text-sm font-semibold hover:bg-secondary-600"
+              style={{ paddingLeft: '4rem', paddingRight: '4rem', paddingTop: '1.25rem', paddingBottom: '1.25rem', fontSize: '0.875rem', color: '#ffffff' }}
             >
               Get Started
             </Link>
