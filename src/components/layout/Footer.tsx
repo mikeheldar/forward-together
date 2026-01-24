@@ -54,7 +54,7 @@ export function Footer() {
             </div>
 
             {/* More Information Column */}
-            <div>
+            <div className="text-center">
               <h3 className="text-base md:text-lg font-bold mb-4" style={{ color: '#f4f3ee' }}>
                 More Information
               </h3>
