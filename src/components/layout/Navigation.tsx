@@ -18,7 +18,7 @@ export function Navigation() {
   const pathname = usePathname();
   
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white shadow-md sticky top-0 z-50 rounded-lg">
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-10">
         <div className="flex justify-between items-center h-16">
           {/* Logo and Header */}
@@ -56,7 +56,7 @@ export function Navigation() {
             <Link
               href="/contact"
               className="ml-2 px-10 py-3.5 bg-secondary-500 text-white rounded-full hover:bg-secondary-600 transition-colors text-sm font-semibold whitespace-nowrap font-sans"
-              style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '0.875rem', paddingBottom: '0.875rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-montserrat), Montserrat, sans-serif' }}
+              style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '0.875rem', paddingBottom: '0.875rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-lato), Lato, sans-serif' }}
             >
               Get Started
             </Link>
@@ -110,7 +110,7 @@ export function Navigation() {
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
               className="block px-10 py-3.5 mt-2 bg-secondary-500 text-white rounded-full text-center text-sm font-semibold hover:bg-secondary-600 font-sans"
-              style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '0.875rem', paddingBottom: '0.875rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-montserrat), Montserrat, sans-serif' }}
+              style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '0.875rem', paddingBottom: '0.875rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-lato), Lato, sans-serif' }}
             >
               Get Started
             </Link>

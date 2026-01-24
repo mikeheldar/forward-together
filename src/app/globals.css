@@ -1,80 +1,84 @@
 @import "tailwindcss";
 
 :root {
-  /* Design Tokens - Colors */
-  --color-primary-50: #f5f5f0;
-  --color-primary-100: #e8e8d8;
-  --color-primary-200: #d1d1b1;
-  --color-primary-300: #b4b484;
-  --color-primary-400: #9a9a6a;
-  --color-primary-500: #3c3c2e;
-  --color-primary-600: #2d2d22;
-  --color-primary-700: #1f1f18;
-  --color-primary-800: #171712;
-  --color-primary-900: #0f0f0c;
+  /* Design Tokens - Colors - New Coolors Palette */
+  --color-primary-50: #e8e9eb;
+  --color-primary-100: #d1d3d7;
+  --color-primary-200: #a3a7af;
+  --color-primary-300: #757b87;
+  --color-primary-400: #474f5f;
+  --color-primary-500: #383f51;
+  --color-primary-600: #2d323f;
+  --color-primary-700: #22262d;
+  --color-primary-800: #16191b;
+  --color-primary-900: #0b0d0f;
   
-  --color-secondary-50: #f5f3f0;
-  --color-secondary-100: #e8e3d8;
-  --color-secondary-200: #d1c7b1;
-  --color-secondary-300: #b4a584;
-  --color-secondary-400: #9a8a6a;
-  --color-secondary-500: #6f675f;
-  --color-secondary-600: #5a544d;
-  --color-secondary-700: #45403b;
-  --color-secondary-800: #2f2c28;
-  --color-secondary-900: #1a1816;
+  --color-secondary-50: #e8eaf0;
+  --color-secondary-100: #d1d5e1;
+  --color-secondary-200: #a3abc3;
+  --color-secondary-300: #7581a5;
+  --color-secondary-400: #475787;
+  --color-secondary-500: #3c4f76;
+  --color-secondary-600: #303f5e;
+  --color-secondary-700: #242f46;
+  --color-secondary-800: #181f2e;
+  --color-secondary-900: #0c0f16;
   
-  --color-accent-50: #f5f2ed;
-  --color-accent-100: #e8dfd1;
-  --color-accent-200: #d1bfa3;
-  --color-accent-300: #b49f75;
-  --color-accent-400: #9a8557;
-  --color-accent-500: #7d6b4a;
-  --color-accent-600: #64563c;
-  --color-accent-700: #4b402e;
-  --color-accent-800: #322b1f;
-  --color-accent-900: #191510;
+  --color-accent-50: #f7f6fc;
+  --color-accent-100: #efedf9;
+  --color-accent-200: #dfdbf3;
+  --color-accent-300: #cfc9ed;
+  --color-accent-400: #bfb7e7;
+  --color-accent-500: #dddbf1;
+  --color-accent-600: #b0afc1;
+  --color-accent-700: #838391;
+  --color-accent-800: #565761;
+  --color-accent-900: #292b30;
   
-  --color-neutral-50: #fafaf8;
-  --color-neutral-100: #f5f5f0;
-  --color-neutral-200: #e8e8e0;
-  --color-neutral-300: #d4d4c8;
-  --color-neutral-400: #a3a398;
-  --color-neutral-500: #73736a;
-  --color-neutral-600: #52524b;
-  --color-neutral-700: #40403a;
-  --color-neutral-800: #2d2d28;
-  --color-neutral-900: #1a1a17;
+  --color-neutral-50: #f5f4f3;
+  --color-neutral-100: #ebe9e7;
+  --color-neutral-200: #d7d3cf;
+  --color-neutral-300: #c3bdb7;
+  --color-neutral-400: #afa79f;
+  --color-neutral-500: #d1beb0;
+  --color-neutral-600: #a7988d;
+  --color-neutral-700: #7d726a;
+  --color-neutral-800: #534c47;
+  --color-neutral-900: #292624;
   
-  /* Earth Tones */
-  --color-earth-charcoal: #1a1a17;
-  --color-earth-blueGrey: #3c4a52;
-  --color-earth-creamyBeige: #f5f5dc;
-  --color-earth-warmTan: #d4b896;
-  --color-earth-oliveBrown: #6f675f;
+  --color-muted-50: #f5f4f4;
+  --color-muted-100: #ebe9e9;
+  --color-muted-200: #d7d3d3;
+  --color-muted-300: #c3bdbd;
+  --color-muted-400: #afa7a7;
+  --color-muted-500: #ab9f9d;
+  --color-muted-600: #897f7e;
+  --color-muted-700: #675f5e;
+  --color-muted-800: #453f3f;
+  --color-muted-900: #231f1f;
   
   /* Semantic Colors */
-  --color-semantic-success: #7d6b4a;
-  --color-semantic-error: #8b5a3c;
-  --color-semantic-warning: #9a8557;
-  --color-semantic-info: #6f675f;
+  --color-semantic-success: #3c4f76;
+  --color-semantic-error: #383f51;
+  --color-semantic-warning: #d1beb0;
+  --color-semantic-info: #3c4f76;
   
   /* Background Colors */
   --color-background-default: #ffffff;
-  --color-background-muted: #fafaf8;
-  --color-background-subtle: #f5f5f0;
+  --color-background-muted: #dddbf1;
+  --color-background-subtle: #f5f4f3;
   
   /* Text Colors */
-  --color-text-primary: #1a1a17;
-  --color-text-secondary: #40403a;
-  --color-text-tertiary: #73736a;
-  --color-text-inverse: #f5f5dc;
-  --color-text-muted: #52524b;
+  --color-text-primary: #383f51;
+  --color-text-secondary: #3c4f76;
+  --color-text-tertiary: #ab9f9d;
+  --color-text-inverse: #ffffff;
+  --color-text-muted: #7d726a;
   
   /* Border Colors */
-  --color-border-default: #e8e8e0;
-  --color-border-muted: #d4d4c8;
-  --color-border-strong: #73736a;
+  --color-border-default: #d1beb0;
+  --color-border-muted: #dddbf1;
+  --color-border-strong: #ab9f9d;
   
   /* Typography */
   --font-heading: var(--font-open-sans), "Open Sans", -apple-system, system-ui, sans-serif;
@@ -118,6 +122,30 @@
   --color-accent-700: var(--color-accent-700);
   --color-accent-800: var(--color-accent-800);
   --color-accent-900: var(--color-accent-900);
+  
+  /* Neutral Colors */
+  --color-neutral-50: var(--color-neutral-50);
+  --color-neutral-100: var(--color-neutral-100);
+  --color-neutral-200: var(--color-neutral-200);
+  --color-neutral-300: var(--color-neutral-300);
+  --color-neutral-400: var(--color-neutral-400);
+  --color-neutral-500: var(--color-neutral-500);
+  --color-neutral-600: var(--color-neutral-600);
+  --color-neutral-700: var(--color-neutral-700);
+  --color-neutral-800: var(--color-neutral-800);
+  --color-neutral-900: var(--color-neutral-900);
+  
+  /* Muted Colors */
+  --color-muted-50: var(--color-muted-50);
+  --color-muted-100: var(--color-muted-100);
+  --color-muted-200: var(--color-muted-200);
+  --color-muted-300: var(--color-muted-300);
+  --color-muted-400: var(--color-muted-400);
+  --color-muted-500: var(--color-muted-500);
+  --color-muted-600: var(--color-muted-600);
+  --color-muted-700: var(--color-muted-700);
+  --color-muted-800: var(--color-muted-800);
+  --color-muted-900: var(--color-muted-900);
   
   /* Background Colors */
   --color-background-default: var(--color-background-default);
@@ -176,6 +204,28 @@ section > div[class*="max-w-"] {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Add rounded edges to all elements */
+div, section, article, aside, header, footer, main, nav {
+  border-radius: 0.5rem;
+}
+
+img, picture, video, canvas, svg {
+  border-radius: 0.5rem;
+}
+
+button, a, input, textarea, select {
+  border-radius: 0.5rem;
+}
+
+/* Override for specific elements that need different radius */
+.rounded-none { border-radius: 0 !important; }
+.rounded-sm { border-radius: 0.125rem !important; }
+.rounded-md { border-radius: 0.375rem !important; }
+.rounded-lg { border-radius: 0.5rem !important; }
+.rounded-xl { border-radius: 0.75rem !important; }
+.rounded-2xl { border-radius: 1rem !important; }
+.rounded-full { border-radius: 9999px !important; }
 
 a {
   color: var(--color-secondary-500);
