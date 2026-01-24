@@ -23,7 +23,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo and Header */}
           <Link href="/" className="flex items-center gap-3 md:gap-4 hover:opacity-80 transition-opacity">
-            <div className="relative w-16 h-16 md:w-20 md:h-20 flex-shrink-0">
+            <div className="relative h-16 w-16 flex-shrink-0">
               <Image
                 src="/images/logo.png"
                 alt="Forward Together Logo"
