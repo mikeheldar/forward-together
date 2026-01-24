@@ -51,8 +51,8 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section className="bg-neutral-50 py-24 md:py-32">
-          <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <section className="bg-neutral-50 py-24 md:py-32 w-full">
+          <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
               {/* Postpartum Support */}
               <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-left">
@@ -100,8 +100,8 @@ export default function Home() {
         </section>
 
         {/* Who We Are Section - Three Column Layout */}
-        <section className="bg-white py-24 md:py-32">
-          <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <section className="bg-white py-24 md:py-32 w-full">
+          <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
               {/* Left Image */}
               <div className="relative w-full aspect-square rounded-xl overflow-hidden">
@@ -139,8 +139,8 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="bg-neutral-50 py-24 md:py-32">
-          <div className="max-w-6xl mx-auto px-6 md:px-8">
+        <section className="bg-neutral-50 py-24 md:py-32 w-full">
+          <div className="max-w-6xl mx-auto px-6 md:px-8 w-full">
             <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-20 text-left font-serif">
               What Clients Say
             </h2>
