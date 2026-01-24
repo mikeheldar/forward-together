@@ -48,7 +48,7 @@ export default function Home() {
         {/* Services Section */}
         <section className="bg-neutral-50 py-24 md:py-32">
           <div className="container mx-auto px-6 md:px-8 max-w-7xl">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-6xl mx-auto mb-0">
               {/* Postpartum Support */}
               <div className="bg-white rounded-lg p-10 md:p-12 shadow-sm text-center">
                 <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
