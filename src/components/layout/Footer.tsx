@@ -4,9 +4,10 @@ import { siteConfig } from '@/lib/site-config';
 export function Footer() {
   return (
     <footer className="rounded-lg" style={{ backgroundColor: '#383f51', color: '#f4f3ee', fontFamily: 'var(--font-heading), "Open Sans", sans-serif' }}>
-      <div className="max-w-7xl mx-auto px-6 md:px-8 py-12 md:py-16">
-        {/* Three Column Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-12 md:mb-16">
+      <div className="w-full px-6 md:px-8 py-12 md:py-16">
+        {/* Three Column Section - Centered Container */}
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-12 md:mb-16">
           {/* Connect Column */}
           <div>
             <h3 className="text-lg md:text-xl font-semibold mb-6 underline decoration-[#f4f3ee] underline-offset-4" style={{ color: '#f4f3ee' }}>
@@ -17,6 +18,7 @@ export function Footer() {
                 <a 
                   href={`tel:${siteConfig.contact.phone.replace(/[^\d]/g, '')}`}
                   className="hover:opacity-80 transition-opacity"
+                  style={{ color: '#ebe9e7' }}
                 >
                   {siteConfig.contact.phone}
                 </a>
@@ -25,6 +27,7 @@ export function Footer() {
                 <a 
                   href={`mailto:${siteConfig.contact.email}`}
                   className="hover:opacity-80 transition-opacity"
+                  style={{ color: '#ebe9e7' }}
                 >
                   {siteConfig.contact.email}
                 </a>
@@ -57,17 +60,17 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="hover:opacity-80 transition-opacity">
+                <Link href="/about" className="hover:opacity-80 transition-opacity" style={{ color: '#ebe9e7' }}>
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:opacity-80 transition-opacity">
+                <Link href="/contact" className="hover:opacity-80 transition-opacity" style={{ color: '#ebe9e7' }}>
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="hover:opacity-80 transition-opacity">
+                <Link href="/faq" className="hover:opacity-80 transition-opacity" style={{ color: '#ebe9e7' }}>
                   FAQ
                 </Link>
               </li>
@@ -82,25 +85,27 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-start gap-2">
                 <svg 
-                  className="w-5 h-5 fill-black mt-0.5 flex-shrink-0" 
+                  className="w-5 h-5 mt-0.5 flex-shrink-0" 
+                  style={{ fill: '#ebe9e7' }}
                   viewBox="0 0 24 24" 
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
                 <div className="space-y-1">
-                  <p>5775 Glenridge Drive</p>
-                  <p>Building B; Suite 310</p>
-                  <p>{siteConfig.contact.address.city}, {siteConfig.contact.address.state} {siteConfig.contact.address.zip.split('-')[0]}</p>
+                  <p style={{ color: '#ebe9e7' }}>5775 Glenridge Drive</p>
+                  <p style={{ color: '#ebe9e7' }}>Building B; Suite 310</p>
+                  <p style={{ color: '#ebe9e7' }}>{siteConfig.contact.address.city}, {siteConfig.contact.address.state} {siteConfig.contact.address.zip.split('-')[0]}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        </div>
 
         {/* Copyright Section */}
-        <div className="border-t border-[#f4f3ee]/30 pt-8 text-center">
-          <p className="text-sm md:text-base">© 2025. All rights reserved.</p>
+        <div className="max-w-7xl mx-auto border-t border-[#f4f3ee]/30 pt-8 text-center">
+          <p className="text-sm md:text-base" style={{ color: '#ebe9e7' }}>© 2025. All rights reserved.</p>
         </div>
       </div>
     </footer>
