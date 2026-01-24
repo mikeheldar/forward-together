@@ -213,23 +213,28 @@ button.bg-primary-700 {
 }
 
 .spwidget-button {
-  display: inline-block;
-  padding: 6px 12px;
-  color: #1371C8;
-  background: #fff;
-  border: 1px solid #1371C8;
-  border-radius: 4px;
-  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 3rem;
+  color: #ffffff !important;
+  background: var(--color-secondary-500) !important;
+  border: 2px solid #ffffff !important;
+  border-radius: 9999px;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
+  transition: all 0.2s ease;
+  font-family: var(--font-body);
 }
 
 .spwidget-button:hover {
-  background: #fff;
-  color: #0F5AA0;
+  background: var(--color-secondary-600) !important;
+  color: #ffffff !important;
 }
 
 .spwidget-button:active {
-  color: rgba(255, 255, 255, .75) !important;
+  background: var(--color-secondary-600) !important;
+  color: #ffffff !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .15) inset;
 }
