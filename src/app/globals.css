@@ -119,18 +119,6 @@
   --color-accent-800: var(--color-accent-800);
   --color-accent-900: var(--color-accent-900);
   
-  /* Neutral Colors */
-  --color-neutral-50: var(--color-neutral-50);
-  --color-neutral-100: var(--color-neutral-100);
-  --color-neutral-200: var(--color-neutral-200);
-  --color-neutral-300: var(--color-neutral-300);
-  --color-neutral-400: var(--color-neutral-400);
-  --color-neutral-500: var(--color-neutral-500);
-  --color-neutral-600: var(--color-neutral-600);
-  --color-neutral-700: var(--color-neutral-700);
-  --color-neutral-800: var(--color-neutral-800);
-  --color-neutral-900: var(--color-neutral-900);
-  
   /* Background Colors */
   --color-background-default: var(--color-background-default);
   --color-background-muted: var(--color-background-muted);
@@ -169,4 +157,24 @@ a {
 
 a:hover {
   color: var(--color-secondary-700);
+}
+
+/* Ensure buttons and links with text-white class have white text */
+a.text-white,
+button.text-white,
+a.text-white:hover,
+button.text-white:hover {
+  color: #ffffff !important;
+}
+
+/* Ensure buttons with dark backgrounds have white text */
+a.bg-secondary-500,
+a.bg-secondary-600,
+a.bg-primary-600,
+a.bg-primary-700,
+button.bg-secondary-500,
+button.bg-secondary-600,
+button.bg-primary-600,
+button.bg-primary-700 {
+  color: #ffffff !important;
 }

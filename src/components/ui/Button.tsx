@@ -40,14 +40,14 @@ export function Button({
   
   if (href) {
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} className={classes} style={{ color: '#ffffff' }}>
         {children}
       </Link>
     );
   }
   
   return (
-    <button className={classes} {...props}>
+    <button className={classes} style={{ color: '#ffffff' }} {...props}>
       {children}
     </button>
   );
