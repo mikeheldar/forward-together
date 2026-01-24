@@ -97,7 +97,7 @@ export default function Home() {
         </section>
 
         {/* Who We Are Section - Three Column Layout */}
-        <section className="bg-background-default py-32 md:py-40 w-full">
+        <section className="bg-background-default pt-[30px] pb-32 md:pb-40 w-full">
           <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
               {/* Left Image */}
