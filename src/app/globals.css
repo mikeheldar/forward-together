@@ -204,8 +204,15 @@ section {
   display: block;
 }
 
-/* Ensure containers with max-width are properly centered */
+/* Ensure all main content containers are centered */
+main > div[class*="max-w-"],
 section > div[class*="max-w-"] {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure grids and flex containers within centered containers maintain centering */
+div[class*="max-w-"] {
   margin-left: auto;
   margin-right: auto;
 }
