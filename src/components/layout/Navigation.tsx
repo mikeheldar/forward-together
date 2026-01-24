@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
@@ -20,9 +21,20 @@ export function Navigation() {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-10">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-primary-600 hover:text-secondary-600 transition-colors font-serif">
-            Forward Together
+          {/* Logo and Header */}
+          <Link href="/" className="flex items-center gap-3 md:gap-4 hover:opacity-80 transition-opacity">
+            <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
+              <Image
+                src="/images/logo.png"
+                alt="Forward Together Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            <span className="text-2xl md:text-3xl font-extrabold text-primary-600 font-serif">
+              Forward Together
+            </span>
           </Link>
           
           {/* Desktop Navigation */}
