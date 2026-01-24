@@ -46,13 +46,6 @@ export default function Home() {
                     data-spwidget-type="OAR" 
                     data-spwidget-scope-global 
                     data-spwidget-autobind
-                    onClick={(e) => {
-                      // Let SimplePractice widget handle the click
-                      // If widget hasn't loaded yet, prevent default navigation
-                      if (!(window as any).SimplePracticeWidget) {
-                        e.preventDefault();
-                      }
-                    }}
                   >
                     Request Appointment
                   </a>
