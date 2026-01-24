@@ -22,7 +22,7 @@ function FAQItem({ item }: { item: typeof faqItems[0] }) {
         </span>
       </button>
       {isOpen && (
-        <div className="mt-4 text-neutral-700 leading-relaxed">
+        <div className="mt-4 text-neutral-700 leading-relaxed text-left">
           <p>{item.answer}</p>
         </div>
       )}
@@ -38,7 +38,7 @@ export default function FAQ() {
       <main className="flex-grow py-16 md:py-24">
         <div className="container mx-auto px-6 md:px-8 max-w-6xl">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-12 text-center font-serif">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-12 text-left font-serif">
               Frequently Asked Questions
             </h1>
             

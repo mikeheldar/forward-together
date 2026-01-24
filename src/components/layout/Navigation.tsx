@@ -109,8 +109,8 @@ export function Navigation() {
             <Link
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-16 py-5 mt-2 bg-secondary-500 text-white rounded-full text-center text-sm font-semibold hover:bg-secondary-600 font-sans"
-              style={{ paddingLeft: '4rem', paddingRight: '4rem', paddingTop: '1.25rem', paddingBottom: '1.25rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-montserrat), Montserrat, sans-serif' }}
+              className="block px-12 py-4 mt-2 bg-secondary-500 text-white rounded-full text-center text-sm font-semibold hover:bg-secondary-600 font-sans"
+              style={{ paddingLeft: '3rem', paddingRight: '3rem', paddingTop: '1rem', paddingBottom: '1rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-montserrat), Montserrat, sans-serif' }}
             >
               Get Started
             </Link>

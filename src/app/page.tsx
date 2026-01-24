@@ -37,7 +37,12 @@ export default function Home() {
                 Compassionate counseling for women at every life stage.
               </p>
               <div className="flex justify-center">
-                <Button href="/contact" variant="primary" size="lg">
+                <Button 
+                  href="/contact" 
+                  variant="primary" 
+                  size="lg"
+                  className="border-2 border-white"
+                >
                   Get Started
                 </Button>
               </div>

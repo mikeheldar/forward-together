@@ -26,9 +26,9 @@ export function Button({
   };
   
   const sizes = {
-    sm: 'px-16 py-5 text-sm',
-    md: 'px-16 py-5 text-sm',
-    lg: 'px-20 py-6 text-base',
+    sm: 'px-12 py-4 text-sm',
+    md: 'px-12 py-4 text-sm',
+    lg: 'px-14 py-4.5 text-base',
   };
   
   const classes = cn(
@@ -39,10 +39,10 @@ export function Button({
   );
   
   const inlineStyles = {
-    paddingLeft: size === 'lg' ? '5rem' : '4rem',
-    paddingRight: size === 'lg' ? '5rem' : '4rem',
-    paddingTop: size === 'lg' ? '1.5rem' : '1.25rem',
-    paddingBottom: size === 'lg' ? '1.5rem' : '1.25rem',
+    paddingLeft: size === 'lg' ? '3.5rem' : '3rem',
+    paddingRight: size === 'lg' ? '3.5rem' : '3rem',
+    paddingTop: size === 'lg' ? '1.125rem' : '1rem',
+    paddingBottom: size === 'lg' ? '1.125rem' : '1rem',
     fontSize: size === 'lg' ? '1rem' : '0.875rem',
     color: '#ffffff',
     fontFamily: 'var(--font-montserrat), Montserrat, sans-serif',
