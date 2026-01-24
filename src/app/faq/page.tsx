@@ -36,7 +36,7 @@ export default function FAQ() {
       <Header />
       
       <main className="flex-grow py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-8">
+        <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-12 text-left font-heading" style={{ color: '#383f51' }}>
             Frequently Asked Questions
           </h1>
