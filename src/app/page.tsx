@@ -3,7 +3,6 @@ import { Footer } from '@/components/layout/Footer';
 import { siteConfig } from '@/lib/site-config';
 import { testimonials, aboutContent } from '@/lib/constants';
 import Image from 'next/image';
-import Script from 'next/script';
 
 export default function Home() {
   return (
@@ -47,11 +46,17 @@ export default function Home() {
                     data-spwidget-type="OAR" 
                     data-spwidget-scope-global 
                     data-spwidget-autobind
+                    onClick={(e) => {
+                      // Let SimplePractice widget handle the click
+                      // If widget hasn't loaded yet, prevent default navigation
+                      if (!(window as any).SimplePracticeWidget) {
+                        e.preventDefault();
+                      }
+                    }}
                   >
                     Request Appointment
                   </a>
                 </div>
-                <Script src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js" strategy="afterInteractive" />
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans, Lato } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const openSans = Open_Sans({
@@ -32,6 +33,10 @@ export default function RootLayout({
         className={`${openSans.variable} ${lato.variable} antialiased`}
       >
         {children}
+        <Script 
+          src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js" 
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
