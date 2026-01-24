@@ -32,7 +32,7 @@ export function Navigation() {
                 priority
               />
             </div>
-            <span className="text-2xl md:text-3xl font-extrabold text-primary-600 font-heading">
+            <span className="text-2xl md:text-3xl font-extrabold font-heading" style={{ color: '#383f51' }}>
               Forward Together
             </span>
           </Link>
@@ -44,19 +44,48 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  'px-4 py-2 text-sm font-medium transition-colors whitespace-nowrap font-sans',
+                  'px-4 py-2 text-sm font-medium transition-colors whitespace-nowrap font-sans rounded-lg',
                   pathname === item.href
-                    ? 'text-secondary-600 border-b-2 border-secondary-600'
-                    : 'text-neutral-700 hover:text-secondary-600'
+                    ? 'border-b-2'
+                    : ''
                 )}
+                style={{
+                  color: pathname === item.href ? '#3c4f76' : '#383f51',
+                  borderColor: pathname === item.href ? '#3c4f76' : 'transparent'
+                }}
+                onMouseEnter={(e) => {
+                  if (pathname !== item.href) {
+                    e.currentTarget.style.color = '#3c4f76';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (pathname !== item.href) {
+                    e.currentTarget.style.color = '#383f51';
+                  }
+                }}
               >
                 {item.label}
               </Link>
             ))}
             <Link
               href="/contact"
-              className="ml-2 px-10 py-3.5 bg-secondary-500 text-white rounded-full hover:bg-secondary-600 transition-colors text-sm font-semibold whitespace-nowrap font-sans"
-              style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '0.875rem', paddingBottom: '0.875rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-lato), Lato, sans-serif' }}
+              className="ml-2 px-10 py-3.5 rounded-full transition-colors text-sm font-semibold whitespace-nowrap font-sans"
+              style={{ 
+                paddingLeft: '2.5rem', 
+                paddingRight: '2.5rem', 
+                paddingTop: '0.875rem', 
+                paddingBottom: '0.875rem', 
+                fontSize: '0.875rem', 
+                color: '#f4f3ee', 
+                backgroundColor: '#3c4f76',
+                fontFamily: 'var(--font-lato), Lato, sans-serif'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#303f5e';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#3c4f76';
+              }}
             >
               Get Started
             </Link>
@@ -64,7 +93,14 @@ export function Navigation() {
           
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-md text-neutral-700 hover:text-secondary-600 focus:outline-none"
+            className="md:hidden p-2 rounded-md focus:outline-none"
+            style={{ color: '#383f51' }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = '#3c4f76';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = '#383f51';
+            }}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -99,9 +135,23 @@ export function Navigation() {
                 className={cn(
                   'block px-4 py-3 rounded-md text-base font-medium',
                   pathname === item.href
-                    ? 'bg-secondary-500 text-white'
-                    : 'text-neutral-700 hover:bg-neutral-100'
+                    ? ''
+                    : ''
                 )}
+                style={{
+                  backgroundColor: pathname === item.href ? '#3c4f76' : 'transparent',
+                  color: pathname === item.href ? '#f4f3ee' : '#383f51'
+                }}
+                onMouseEnter={(e) => {
+                  if (pathname !== item.href) {
+                    e.currentTarget.style.backgroundColor = '#dddbf1';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (pathname !== item.href) {
+                    e.currentTarget.style.backgroundColor = 'transparent';
+                  }
+                }}
               >
                 {item.label}
               </Link>
@@ -109,8 +159,17 @@ export function Navigation() {
             <Link
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-10 py-3.5 mt-2 bg-secondary-500 text-white rounded-full text-center text-sm font-semibold hover:bg-secondary-600 font-sans"
-              style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '0.875rem', paddingBottom: '0.875rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-lato), Lato, sans-serif' }}
+              className="block px-10 py-3.5 mt-2 rounded-full text-center text-sm font-semibold font-sans hover:opacity-90"
+              style={{ 
+                paddingLeft: '2.5rem', 
+                paddingRight: '2.5rem', 
+                paddingTop: '0.875rem', 
+                paddingBottom: '0.875rem', 
+                fontSize: '0.875rem', 
+                color: '#f4f3ee', 
+                backgroundColor: '#3c4f76',
+                fontFamily: 'var(--font-lato), Lato, sans-serif'
+              }}
             >
               Get Started
             </Link>

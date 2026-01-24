@@ -10,23 +10,23 @@ export default function About() {
       
       <main className="flex-grow py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-500 mb-8 text-left font-heading">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-left font-heading" style={{ color: '#383f51' }}>
             About Forward Together
           </h1>
           
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-semibold text-primary-500 mb-6 font-heading text-left">
+            <h2 className="text-3xl font-semibold mb-6 font-heading text-left" style={{ color: '#383f51' }}>
               {aboutContent.heading}
             </h2>
-            <p className="text-lg text-text-primary leading-relaxed mb-6 text-left">
+            <p className="text-lg leading-relaxed mb-6 text-left" style={{ color: '#383f51' }}>
               {aboutContent.text}
             </p>
 
             <div className="mt-12 bg-background-muted rounded-lg p-8 md:p-10 text-left">
-              <h3 className="text-2xl font-semibold text-primary-500 mb-4 font-heading">
+              <h3 className="text-2xl font-semibold mb-4 font-heading" style={{ color: '#383f51' }}>
                 {siteConfig.therapist.name}, {siteConfig.therapist.credentials}
               </h3>
-              <p className="text-text-primary">
+              <p style={{ color: '#383f51' }}>
                 I am a Licensed Clinical Social Worker (LCSW) dedicated to providing compassionate, 
                 evidence-based therapy for women navigating life's challenges. My approach is warm, 
                 collaborative, and tailored to your unique needs and goals.

@@ -14,15 +14,15 @@ function FAQItem({ item }: { item: typeof faqItems[0] }) {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left flex justify-between items-center py-2 rounded-lg"
       >
-        <h3 className="text-lg font-semibold text-primary-500 pr-4 font-heading">
+        <h3 className="text-lg font-semibold pr-4 font-heading" style={{ color: '#383f51' }}>
           {item.question}
         </h3>
-        <span className="text-secondary-500 text-2xl font-light flex-shrink-0">
+        <span className="text-2xl font-light flex-shrink-0" style={{ color: '#3c4f76' }}>
           {isOpen ? '−' : '+'}
         </span>
       </button>
       {isOpen && (
-        <div className="mt-4 text-text-primary leading-relaxed text-left rounded-lg">
+        <div className="mt-4 leading-relaxed text-left rounded-lg" style={{ color: '#383f51' }}>
           <p>{item.answer}</p>
         </div>
       )}
@@ -37,7 +37,7 @@ export default function FAQ() {
       
       <main className="flex-grow py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-500 mb-12 text-left font-heading">
+          <h1 className="text-4xl md:text-5xl font-bold mb-12 text-left font-heading" style={{ color: '#383f51' }}>
             Frequently Asked Questions
           </h1>
           

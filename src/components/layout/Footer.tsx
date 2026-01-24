@@ -3,13 +3,13 @@ import { siteConfig } from '@/lib/site-config';
 
 export function Footer() {
   return (
-    <footer className="bg-secondary-500 text-white rounded-lg" style={{ fontFamily: 'var(--font-heading), "Open Sans", sans-serif' }}>
+    <footer className="rounded-lg" style={{ backgroundColor: '#383f51', color: '#f4f3ee', fontFamily: 'var(--font-heading), "Open Sans", sans-serif' }}>
       <div className="max-w-7xl mx-auto px-6 md:px-8 py-12 md:py-16">
         {/* Three Column Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-12 md:mb-16">
           {/* Connect Column */}
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-6 underline decoration-white underline-offset-4">
+            <h3 className="text-lg md:text-xl font-semibold mb-6 underline decoration-[#f4f3ee] underline-offset-4" style={{ color: '#f4f3ee' }}>
               Connect
             </h3>
             <ul className="space-y-3">
@@ -38,7 +38,8 @@ export function Footer() {
                   aria-label="LinkedIn"
                 >
                   <svg 
-                    className="w-8 h-8 fill-white" 
+                    className="w-8 h-8" 
+                    style={{ fill: '#f4f3ee' }}
                     viewBox="0 0 24 24" 
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -51,7 +52,7 @@ export function Footer() {
 
           {/* More Information Column */}
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-6 underline decoration-white underline-offset-4">
+            <h3 className="text-lg md:text-xl font-semibold mb-6 underline decoration-[#f4f3ee] underline-offset-4" style={{ color: '#f4f3ee' }}>
               More Information
             </h3>
             <ul className="space-y-3">
@@ -75,7 +76,7 @@ export function Footer() {
 
           {/* Location Column */}
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-6 underline decoration-white underline-offset-4">
+            <h3 className="text-lg md:text-xl font-semibold mb-6 underline decoration-[#f4f3ee] underline-offset-4" style={{ color: '#f4f3ee' }}>
               Location
             </h3>
             <div className="space-y-2">
@@ -98,7 +99,7 @@ export function Footer() {
         </div>
 
         {/* Copyright Section */}
-        <div className="border-t border-white/30 pt-8 text-center">
+        <div className="border-t border-[#f4f3ee]/30 pt-8 text-center">
           <p className="text-sm md:text-base">© 2025. All rights reserved.</p>
         </div>
       </div>

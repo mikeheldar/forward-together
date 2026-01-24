@@ -24,15 +24,15 @@ export default function Home() {
             />
           </div>
           {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-secondary-500/60 z-0 rounded-lg"></div>
+          <div className="absolute inset-0 bg-accent-500/60 z-0 rounded-lg"></div>
           
           {/* Content */}
           <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-8">
             <div className="flex flex-col items-center text-center py-16 md:py-20">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-12 leading-tight font-heading">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-12 leading-tight font-heading" style={{ color: '#f4f3ee' }}>
                 Forward Together
               </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl text-white mb-12 max-w-3xl mx-auto leading-relaxed font-sans">
+              <p className="text-xl md:text-2xl lg:text-3xl mb-12 max-w-3xl mx-auto leading-relaxed font-sans" style={{ color: '#f4f3ee' }}>
                 Compassionate counseling for women at every life stage.
               </p>
               <div className="flex justify-center mb-12">
@@ -59,31 +59,31 @@ export default function Home() {
             <div className="w-full flex justify-center">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-6xl px-6 md:px-8">
                 {/* Postpartum Support */}
-                <div className="bg-secondary-500/50 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center border border-white/30">
-                  <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-heading">
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.5)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-2xl md:text-3xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
                     Postpartum Support
                   </h3>
-                  <p className="text-white/90 mb-4 text-lg leading-relaxed">
+                  <p className="mb-4 text-lg leading-relaxed" style={{ color: 'rgba(244, 243, 238, 0.9)' }}>
                     Guidance through motherhood and emotional challenges.
                   </p>
                 </div>
 
                 {/* Anxiety Relief */}
-                <div className="bg-secondary-500/50 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center border border-white/30">
-                  <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-heading">
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.5)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-2xl md:text-3xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
                     Anxiety Relief
                   </h3>
-                  <p className="text-white/90 mb-4 text-lg leading-relaxed">
+                  <p className="mb-4 text-lg leading-relaxed" style={{ color: 'rgba(244, 243, 238, 0.9)' }}>
                     With support and the right tools, you can learn to quiet your mind and move forward with confidence.
                   </p>
                 </div>
 
                 {/* Life Transitions */}
-                <div className="bg-secondary-500/50 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center border border-white/30">
-                  <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-heading">
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.5)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-2xl md:text-3xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
                     Life Transitions
                   </h3>
-                  <p className="text-white/90 mb-4 text-lg leading-relaxed">
+                  <p className="mb-4 text-lg leading-relaxed" style={{ color: 'rgba(244, 243, 238, 0.9)' }}>
                     Change can be overwhelming—but you don't have to navigate it alone.
                   </p>
                 </div>
@@ -113,10 +113,10 @@ export default function Home() {
 
               {/* Center Text Block */}
               <div className="flex flex-col items-start text-left px-4 md:px-8 rounded-lg">
-                <h2 className="text-4xl md:text-5xl font-bold text-primary-500 mb-6 md:mb-8 font-heading">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 md:mb-8 font-heading" style={{ color: '#383f51' }}>
                   Who We Are
                 </h2>
-                <p className="text-lg md:text-xl lg:text-2xl text-text-primary leading-relaxed">
+                <p className="text-lg md:text-xl lg:text-2xl leading-relaxed" style={{ color: '#383f51' }}>
                   We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life's transitions.
                 </p>
               </div>
@@ -138,7 +138,7 @@ export default function Home() {
         {/* Testimonials Section */}
         <section className="bg-background-muted py-32 md:py-40 w-full rounded-lg">
           <div className="max-w-6xl mx-auto px-6 md:px-8 w-full">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-500 mb-20 text-left font-heading">
+            <h2 className="text-4xl md:text-5xl font-bold mb-20 text-left font-heading" style={{ color: '#383f51' }}>
               What Clients Say
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
@@ -150,10 +150,10 @@ export default function Home() {
                         <span key={i} className="text-yellow-400 text-2xl">★</span>
                       ))}
                     </div>
-                    <p className="text-text-primary mb-8 italic flex-grow leading-relaxed text-lg text-left">
+                    <p className="mb-8 italic flex-grow leading-relaxed text-lg text-left" style={{ color: '#383f51' }}>
                       "{testimonial.quote}"
                     </p>
-                    <p className="text-text-secondary font-semibold text-left text-lg">
+                    <p className="font-semibold text-left text-lg" style={{ color: '#3c4f76' }}>
                       — {testimonial.author}
                     </p>
                   </div>
