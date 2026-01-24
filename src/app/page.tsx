@@ -136,7 +136,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="bg-background-muted py-32 md:py-40 w-full rounded-lg">
+        <section className="bg-background-muted py-32 md:py-40 pb-[50px] w-full rounded-lg">
           <div className="max-w-6xl mx-auto px-6 md:px-8 w-full">
             <h2 className="text-4xl md:text-5xl font-bold mb-20 text-left font-heading" style={{ color: '#383f51' }}>
               What Clients Say
