@@ -25,7 +25,7 @@ export default function Home() {
             />
           </div>
           {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-primary-700/70 z-0"></div>
+          <div className="absolute inset-0 bg-secondary-500/60 z-0"></div>
           
           {/* Content */}
           <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-8">
@@ -43,7 +43,7 @@ export default function Home() {
                   size="lg"
                   className="border-2 border-white"
                 >
-                  Get Started
+                  Request Appointment
                 </Button>
               </div>
             </div>
@@ -55,44 +55,32 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
               {/* Postpartum Support */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center">
-                <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
+              <div className="bg-secondary-500/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center border border-white/20">
+                <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-serif">
                   Postpartum Support
                 </h3>
-                <p className="text-neutral-700 mb-4 text-lg leading-relaxed">
+                <p className="text-white/90 mb-4 text-lg leading-relaxed">
                   Guidance through motherhood and emotional challenges.
-                </p>
-                <p className="text-neutral-600 leading-relaxed">
-                  With support and the right tools, you can learn to quiet your mind and move forward with confidence.
-                </p>
-                <p className="text-neutral-600 mt-6 leading-relaxed">
-                  Change can be overwhelming—but you don't have to navigate it alone.
                 </p>
               </div>
 
               {/* Anxiety Relief */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center">
-                <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
+              <div className="bg-secondary-500/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center border border-white/20">
+                <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-serif">
                   Anxiety Relief
                 </h3>
-                <p className="text-neutral-700 mb-4 text-lg leading-relaxed">
-                  Expert support for managing anxiety and stress.
-                </p>
-                <p className="text-neutral-600 leading-relaxed">
-                  Learn effective strategies to manage anxiety and find peace in your daily life.
+                <p className="text-white/90 mb-4 text-lg leading-relaxed">
+                  With support and the right tools, you can learn to quiet your mind and move forward with confidence.
                 </p>
               </div>
 
               {/* Life Transitions */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center">
-                <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 mb-6 font-serif">
+              <div className="bg-secondary-500/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center border border-white/20">
+                <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-serif">
                   Life Transitions
                 </h3>
-                <p className="text-neutral-700 mb-4 text-lg leading-relaxed">
-                  Support through life's major changes and challenges.
-                </p>
-                <p className="text-neutral-600 leading-relaxed">
-                  Navigate career changes, relationships, and personal growth with confidence.
+                <p className="text-white/90 mb-4 text-lg leading-relaxed">
+                  Change can be overwhelming—but you don't have to navigate it alone.
                 </p>
               </div>
             </div>
