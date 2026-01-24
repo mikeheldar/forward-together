@@ -55,7 +55,7 @@ export function Navigation() {
             ))}
             <Link
               href="/contact"
-              className="ml-2 px-8 py-4 bg-secondary-500 text-white rounded-full hover:bg-secondary-600 transition-colors text-lg font-semibold whitespace-nowrap"
+              className="ml-2 px-8 py-3.5 bg-secondary-500 text-white rounded-full hover:bg-secondary-600 transition-colors text-base font-semibold whitespace-nowrap"
             >
               Get Started
             </Link>
@@ -108,7 +108,7 @@ export function Navigation() {
             <Link
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-8 py-4 mt-2 bg-secondary-500 text-white rounded-full text-center text-lg font-semibold hover:bg-secondary-600"
+              className="block px-8 py-3.5 mt-2 bg-secondary-500 text-white rounded-full text-center text-base font-semibold hover:bg-secondary-600"
             >
               Get Started
             </Link>
