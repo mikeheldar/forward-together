@@ -55,8 +55,8 @@ export function Navigation() {
             ))}
             <Link
               href="/contact"
-              className="ml-2 px-16 py-5 bg-secondary-500 text-white rounded-full hover:bg-secondary-600 transition-colors text-sm font-semibold whitespace-nowrap"
-              style={{ paddingLeft: '4rem', paddingRight: '4rem', paddingTop: '1.25rem', paddingBottom: '1.25rem', fontSize: '0.875rem', color: '#ffffff' }}
+              className="ml-2 px-12 py-4 bg-secondary-500 text-white rounded-full hover:bg-secondary-600 transition-colors text-sm font-semibold whitespace-nowrap font-sans"
+              style={{ paddingLeft: '3rem', paddingRight: '3rem', paddingTop: '1rem', paddingBottom: '1rem', fontSize: '0.875rem', color: '#ffffff', fontFamily: 'var(--font-montserrat), Montserrat, sans-serif' }}
             >
               Get Started
             </Link>
