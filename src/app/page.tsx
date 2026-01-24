@@ -24,7 +24,7 @@ export default function Home() {
             />
           </div>
           {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-accent-500/60 z-0 rounded-lg"></div>
+          <div className="absolute inset-0 bg-accent-500/30 z-0 rounded-lg"></div>
           
           {/* Content */}
           <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-8">
@@ -55,12 +55,12 @@ export default function Home() {
           </div>
 
           {/* Services Boxes - Floating over the background */}
-          <div className="absolute bottom-[40%] left-0 right-0 z-20 w-full -translate-y-[40px]">
+          <div className="absolute bottom-[40%] left-0 right-0 z-20 w-full -translate-y-[60px]">
             <div className="w-full flex justify-center">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-6xl px-6 md:px-8">
                 {/* Postpartum Support */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.5)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
-                  <h3 className="text-2xl md:text-3xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.3)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
                     Postpartum Support
                   </h3>
                   <p className="mb-4 text-lg leading-relaxed" style={{ color: 'rgba(244, 243, 238, 0.9)' }}>
@@ -69,8 +69,8 @@ export default function Home() {
                 </div>
 
                 {/* Anxiety Relief */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.5)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
-                  <h3 className="text-2xl md:text-3xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.3)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
                     Anxiety Relief
                   </h3>
                   <p className="mb-4 text-lg leading-relaxed" style={{ color: 'rgba(244, 243, 238, 0.9)' }}>
@@ -79,8 +79,8 @@ export default function Home() {
                 </div>
 
                 {/* Life Transitions */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.5)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
-                  <h3 className="text-2xl md:text-3xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.3)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
                     Life Transitions
                   </h3>
                   <p className="mb-4 text-lg leading-relaxed" style={{ color: 'rgba(244, 243, 238, 0.9)' }}>

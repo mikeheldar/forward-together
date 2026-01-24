@@ -50,7 +50,7 @@ export function Navigation() {
                     : ''
                 )}
                 style={{
-                  color: '#a99985',
+                  color: '#8b7e74',
                   textDecoration: pathname === item.href ? 'underline' : 'none',
                   textUnderlineOffset: pathname === item.href ? '4px' : '0'
                 }}
@@ -78,14 +78,14 @@ export function Navigation() {
                 paddingBottom: '0.875rem', 
                 fontSize: '0.875rem', 
                 color: '#f4f3ee', 
-                backgroundColor: '#a99985',
+                backgroundColor: '#6f655d',
                 fontFamily: 'var(--font-lato), Lato, sans-serif'
               }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#877a6a';
+                  e.currentTarget.style.backgroundColor = '#534c46';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#a99985';
+                  e.currentTarget.style.backgroundColor = '#6f655d';
                 }}
             >
               Get Started
@@ -95,7 +95,7 @@ export function Navigation() {
           {/* Mobile menu button */}
           <button
             className="md:hidden p-2 rounded-md focus:outline-none"
-            style={{ color: '#a99985' }}
+            style={{ color: '#8b7e74' }}
             onMouseEnter={(e) => {
               e.currentTarget.style.opacity = '0.8';
             }}
@@ -140,8 +140,8 @@ export function Navigation() {
                     : ''
                 )}
                 style={{
-                  backgroundColor: pathname === item.href ? '#a99985' : 'transparent',
-                  color: pathname === item.href ? '#f4f3ee' : '#a99985',
+                  backgroundColor: pathname === item.href ? '#6f655d' : 'transparent',
+                  color: pathname === item.href ? '#f4f3ee' : '#8b7e74',
                   textDecoration: pathname === item.href ? 'underline' : 'none',
                   textUnderlineOffset: pathname === item.href ? '4px' : '0'
                 }}
@@ -170,7 +170,7 @@ export function Navigation() {
                 paddingBottom: '0.875rem', 
                 fontSize: '0.875rem', 
                 color: '#f4f3ee', 
-                backgroundColor: '#a99985',
+                backgroundColor: '#6f655d',
                 fontFamily: 'var(--font-lato), Lato, sans-serif'
               }}
             >
