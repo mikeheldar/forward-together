@@ -30,7 +30,7 @@ export default function Home() {
           {/* Content */}
           <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-8">
             <div className="flex flex-col items-center text-center py-16 md:py-20">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight font-serif">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight font-heading">
                 Forward Together
               </h1>
               <p className="text-xl md:text-2xl lg:text-3xl text-white mb-12 max-w-3xl mx-auto leading-relaxed font-sans">
@@ -55,7 +55,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 w-full max-w-6xl">
                 {/* Postpartum Support */}
                 <div className="bg-secondary-500/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center border border-white/20">
-                  <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-serif">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-heading">
                     Postpartum Support
                   </h3>
                   <p className="text-white/90 mb-4 text-lg leading-relaxed">
@@ -65,7 +65,7 @@ export default function Home() {
 
                 {/* Anxiety Relief */}
                 <div className="bg-secondary-500/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center border border-white/20">
-                  <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-serif">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-heading">
                     Anxiety Relief
                   </h3>
                   <p className="text-white/90 mb-4 text-lg leading-relaxed">
@@ -75,7 +75,7 @@ export default function Home() {
 
                 {/* Life Transitions */}
                 <div className="bg-secondary-500/80 backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center border border-white/20">
-                  <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-serif">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-white mb-6 font-heading">
                     Life Transitions
                   </h3>
                   <p className="text-white/90 mb-4 text-lg leading-relaxed">
@@ -108,7 +108,7 @@ export default function Home() {
 
               {/* Center Text Block */}
               <div className="flex flex-col items-start text-left px-4 md:px-8">
-                <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-6 md:mb-8 font-serif">
+                <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-6 md:mb-8 font-heading">
                   Who We Are
                 </h2>
                 <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-relaxed">
@@ -133,7 +133,7 @@ export default function Home() {
         {/* Testimonials Section */}
         <section className="bg-neutral-50 py-32 md:py-40 w-full">
           <div className="max-w-6xl mx-auto px-6 md:px-8 w-full">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-20 text-left font-serif">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-20 text-left font-heading">
               What Clients Say
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">

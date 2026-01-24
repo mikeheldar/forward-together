@@ -14,7 +14,7 @@ function FAQItem({ item }: { item: typeof faqItems[0] }) {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left flex justify-between items-center py-2"
       >
-        <h3 className="text-lg font-semibold text-primary-600 pr-4 font-serif">
+        <h3 className="text-lg font-semibold text-primary-600 pr-4 font-heading">
           {item.question}
         </h3>
         <span className="text-secondary-600 text-2xl font-light flex-shrink-0">
@@ -37,7 +37,7 @@ export default function FAQ() {
       
       <main className="flex-grow py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-12 text-left font-serif">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-12 text-left font-heading">
             Frequently Asked Questions
           </h1>
           

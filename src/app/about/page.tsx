@@ -10,12 +10,12 @@ export default function About() {
       
       <main className="flex-grow py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-8 text-left font-serif">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-8 text-left font-heading">
             About Forward Together
           </h1>
           
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-semibold text-primary-600 mb-6 font-serif text-left">
+            <h2 className="text-3xl font-semibold text-primary-600 mb-6 font-heading text-left">
               {aboutContent.heading}
             </h2>
             <p className="text-lg text-neutral-700 leading-relaxed mb-6 text-left">
@@ -23,7 +23,7 @@ export default function About() {
             </p>
 
             <div className="mt-12 bg-neutral-50 rounded-lg p-8 md:p-10 text-left">
-              <h3 className="text-2xl font-semibold text-primary-600 mb-4 font-serif">
+              <h3 className="text-2xl font-semibold text-primary-600 mb-4 font-heading">
                 {siteConfig.therapist.name}, {siteConfig.therapist.credentials}
               </h3>
               <p className="text-neutral-700">

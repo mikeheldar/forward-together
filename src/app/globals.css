@@ -77,8 +77,8 @@
   --color-border-strong: #73736a;
   
   /* Typography */
-  --font-heading: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-body: var(--font-montserrat), "Montserrat", -apple-system, system-ui, sans-serif;
+  --font-heading: var(--font-open-sans), "Open Sans", -apple-system, system-ui, sans-serif;
+  --font-body: var(--font-lato), "Lato", -apple-system, system-ui, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, monospace;
 }
 
@@ -126,7 +126,7 @@
   
   /* Font Families */
   --font-sans: var(--font-body);
-  --font-serif: var(--font-heading);
+  --font-heading: var(--font-heading);
   --font-mono: var(--font-mono);
 }
 
@@ -137,20 +137,20 @@ body {
   line-height: 1.6;
 }
 
-/* All headings use Playfair Display */
+/* All headings use Open Sans */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading) !important;
   font-weight: 700;
   line-height: 1.2;
 }
 
-/* All paragraphs and body text use Montserrat */
+/* All paragraphs and body text use Lato */
 p, span, div, a, button, li, td, th, label, input, textarea, select {
   font-family: var(--font-body) !important;
 }
 
-/* Headings with font-serif class */
-.font-serif, .font-heading {
+/* Headings with font-heading class */
+.font-heading {
   font-family: var(--font-heading) !important;
 }
 

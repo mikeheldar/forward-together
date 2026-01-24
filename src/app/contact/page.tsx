@@ -9,14 +9,14 @@ export default function Contact() {
       
       <main className="flex-grow py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-12 text-left font-serif">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-12 text-left font-heading">
             Contact Us
           </h1>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="text-left">
-              <h2 className="text-2xl font-semibold text-primary-600 mb-6 font-serif">
+              <h2 className="text-2xl font-semibold text-primary-600 mb-6 font-heading">
                 Get in Touch
               </h2>
               <div className="space-y-6">
@@ -52,7 +52,7 @@ export default function Contact() {
 
             {/* Office Information */}
             <div className="text-left">
-              <h2 className="text-2xl font-semibold text-primary-600 mb-6 font-serif">
+              <h2 className="text-2xl font-semibold text-primary-600 mb-6 font-heading">
                 Office Hours
               </h2>
               <div className="bg-neutral-50 rounded-lg p-6 md:p-8">

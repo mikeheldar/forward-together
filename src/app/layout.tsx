@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Montserrat } from "next/font/google";
+import { Open_Sans, Lato } from "next/font/google";
 import "./globals.css";
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair",
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "600", "700"],
   display: "swap",
 });
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+const lato = Lato({
+  variable: "--font-lato",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "700"],
   display: "swap",
 });
 
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfairDisplay.variable} ${montserrat.variable} antialiased`}
+        className={`${openSans.variable} ${lato.variable} antialiased`}
       >
         {children}
       </body>

@@ -32,7 +32,7 @@ export function Navigation() {
                 priority
               />
             </div>
-            <span className="text-2xl md:text-3xl font-extrabold text-primary-600 font-serif">
+            <span className="text-2xl md:text-3xl font-extrabold text-primary-600 font-heading">
               Forward Together
             </span>
           </Link>
