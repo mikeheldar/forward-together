@@ -165,27 +165,6 @@ p, span, div, a, button, li, td, th, label, input, textarea, select {
   box-sizing: border-box;
 }
 
-/* Force all containers with max-width to be centered */
-[class*="max-w-"] {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  display: block !important;
-}
-
-/* Ensure sections are block-level and can center their children */
-section {
-  display: block !important;
-  width: 100% !important;
-}
-
-/* Ensure main content containers are centered */
-main > section > div[class*="max-w-"],
-main > section > div[class*="container"] {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  display: block !important;
-}
-
 a {
   color: var(--color-secondary-500);
   text-decoration: none;

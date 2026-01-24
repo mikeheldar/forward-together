@@ -36,17 +36,15 @@ export default function FAQ() {
       <Header />
       
       <main className="flex-grow py-16 md:py-24">
-        <div className="w-full max-w-6xl mx-auto px-6 md:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-12 text-left font-serif">
-              Frequently Asked Questions
-            </h1>
-            
-            <div className="bg-white rounded-lg shadow-sm">
-              {faqItems.map((item) => (
-                <FAQItem key={item.id} item={item} />
-              ))}
-            </div>
+        <div className="max-w-6xl mx-auto px-6 md:px-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-600 mb-12 text-left font-serif">
+            Frequently Asked Questions
+          </h1>
+          
+          <div className="bg-white rounded-lg shadow-sm">
+            {faqItems.map((item) => (
+              <FAQItem key={item.id} item={item} />
+            ))}
           </div>
         </div>
       </main>
