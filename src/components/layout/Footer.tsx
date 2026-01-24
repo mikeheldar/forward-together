@@ -7,9 +7,9 @@ export function Footer() {
       <div className="w-full px-6 md:px-8 py-12 md:py-16">
         {/* Three Column Section - Centered Container */}
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8">
             {/* Connect Column */}
-            <div>
+            <div className="text-left">
               <h3 className="text-base md:text-lg font-bold mb-4" style={{ color: '#f4f3ee' }}>
                 Connect
               </h3>
@@ -32,7 +32,7 @@ export function Footer() {
                     {siteConfig.contact.email}
                   </a>
                 </p>
-                <div className="pt-2 flex justify-center">
+                <div className="pt-2 flex justify-start">
                   <a 
                     href="https://www.linkedin.com" 
                     target="_blank" 
@@ -78,12 +78,12 @@ export function Footer() {
             </div>
 
             {/* Location Column */}
-            <div>
+            <div className="text-left">
               <h3 className="text-base md:text-lg font-bold mb-4" style={{ color: '#f4f3ee' }}>
                 Location
               </h3>
               <div className="space-y-1">
-                <div className="flex items-center justify-center gap-2">
+                <div className="flex items-center justify-start gap-2">
                   <svg 
                     className="w-4 h-4 flex-shrink-0" 
                     style={{ fill: '#ebe9e7' }}
