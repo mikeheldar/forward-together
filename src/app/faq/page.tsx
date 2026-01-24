@@ -35,13 +35,13 @@ export default function FAQ() {
     <div className="min-h-screen bg-background-default flex flex-col">
       <Header />
       
-      <main className="flex-grow py-16 md:py-24">
+      <main className="flex-grow py-16 md:py-24 mb-8">
         <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
           <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center font-heading" style={{ color: '#383f51' }}>
             Frequently Asked Questions
           </h1>
           
-          <div className="bg-white rounded-lg shadow-sm p-6 md:p-8">
+          <div className="bg-white rounded-lg shadow-sm p-6 md:p-8 mb-8">
             {faqItems.map((item) => (
               <FAQItem key={item.id} item={item} />
             ))}
