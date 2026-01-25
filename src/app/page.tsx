@@ -101,6 +101,14 @@ export default function Home() {
           <div className="max-w-7xl mx-auto w-full">
             {/* Mobile: Stacked Layout */}
             <div className="md:hidden space-y-6">
+              <div className="flex flex-col items-center text-center">
+                <h2 className="text-3xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+                  Who We Are
+                </h2>
+                <p className="text-base leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                  We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life's transitions.
+                </p>
+              </div>
               <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
                   src="/images/IMG_2286.jpeg"
@@ -109,14 +117,6 @@ export default function Home() {
                   className="object-cover object-center rounded-xl"
                   sizes="100vw"
                 />
-              </div>
-              <div className="flex flex-col items-start text-left">
-                <h2 className="text-3xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-                  Who We Are
-                </h2>
-                <p className="text-base leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-                  We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life's transitions.
-                </p>
               </div>
               <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
