@@ -9,11 +9,11 @@ function FAQItem({ item, defaultOpen }: { item: typeof faqItems[0], defaultOpen:
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div className="border-b border-neutral-300 py-8 mb-4 rounded-lg">
+    <div className="border-b border-neutral-300 mb-4 rounded-lg">
       {/* Collapsible button for all screen sizes */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left flex justify-between items-center"
+        className="w-full text-left flex justify-between items-center py-6"
       >
         <h3 className="text-lg md:text-xl font-semibold pr-4 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
           {item.question}
@@ -24,7 +24,7 @@ function FAQItem({ item, defaultOpen }: { item: typeof faqItems[0], defaultOpen:
       </button>
 
       {/* Answer - shown when open */}
-      <div className={`${isOpen ? 'block' : 'hidden'} mt-6 leading-relaxed text-left rounded-lg text-base md:text-lg`} style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+      <div className={`${isOpen ? 'block' : 'hidden'} px-0 pb-8 leading-relaxed text-left rounded-lg text-base md:text-lg`} style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
         <p>{item.answer}</p>
       </div>
     </div>
