@@ -9,7 +9,7 @@ function FAQItem({ item, defaultOpen }: { item: typeof faqItems[0], defaultOpen:
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div className="border-b border-neutral-300 py-6 rounded-lg">
+    <div className="border-b border-neutral-300 py-8 mb-4 rounded-lg">
       {/* Collapsible button for all screen sizes */}
       <button
         onClick={() => setIsOpen(!isOpen)}
