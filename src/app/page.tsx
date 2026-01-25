@@ -32,10 +32,10 @@ export default function Home() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-12 leading-tight font-heading" style={{ color: '#f4f3ee' }}>
                 Forward Together
               </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl mb-12 max-w-3xl mx-auto leading-relaxed font-sans" style={{ color: '#f4f3ee' }}>
+              <p className="text-xl md:text-2xl lg:text-3xl max-w-3xl mx-auto leading-relaxed font-sans" style={{ color: '#f4f3ee', marginBottom: '58px' }}>
                 Compassionate counseling for women at every life stage.
               </p>
-              <div className="flex justify-center mb-12 mt-[30px]">
+              <div className="flex justify-center mb-12">
                 <div className="spwidget-button-wrapper">
                   <a 
                     href="https://shelly-eisenstadt.clientsecure.me" 
