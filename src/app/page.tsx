@@ -96,40 +96,71 @@ export default function Home() {
         <section className="bg-background-default pt-24 md:pt-32 w-full rounded-lg">
         </section>
 
-        {/* Who We Are Section - Image Left, Text Right */}
+        {/* Who We Are Section */}
         <section className="bg-background-default pt-[30px] pb-16 md:pb-24 mb-[30px] w-full">
           <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-              {/* Left Images - Stacked */}
-              <div className="space-y-6">
-                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
-                  <Image
-                    src="/images/IMG_2286.jpeg"
-                    alt="Woman with laptop in comfortable setting"
-                    fill
-                    className="object-cover object-center rounded-xl"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
-                  <Image
-                    src="/images/IMG_2281.jpeg"
-                    alt="Supportive connection and community"
-                    fill
-                    className="object-cover object-center rounded-xl"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
+            {/* Mobile: Stacked Layout */}
+            <div className="md:hidden space-y-6">
+              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+                <Image
+                  src="/images/IMG_2286.jpeg"
+                  alt="Woman with laptop in comfortable setting"
+                  fill
+                  className="object-cover object-center rounded-xl"
+                  sizes="100vw"
+                />
               </div>
-
-              {/* Right Text Block */}
               <div className="flex flex-col items-start text-left">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading" style={{ color: '#383f51' }}>
+                <h2 className="text-3xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
                   Who We Are
                 </h2>
-                <p className="text-base md:text-lg leading-relaxed" style={{ color: '#383f51' }}>
+                <p className="text-base leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                   We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life's transitions.
                 </p>
+              </div>
+              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+                <Image
+                  src="/images/IMG_2281.jpeg"
+                  alt="Supportive connection and community"
+                  fill
+                  className="object-cover object-center rounded-xl"
+                  sizes="100vw"
+                />
+              </div>
+            </div>
+
+            {/* Desktop: Image - Text - Image Layout */}
+            <div className="hidden md:grid md:grid-cols-3 gap-8 lg:gap-12 items-center">
+              {/* Left Image */}
+              <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden">
+                <Image
+                  src="/images/IMG_2286.jpeg"
+                  alt="Woman with laptop in comfortable setting"
+                  fill
+                  className="object-cover object-center rounded-xl"
+                  sizes="33vw"
+                />
+              </div>
+
+              {/* Center Text Block */}
+              <div className="flex flex-col items-center text-center">
+                <h2 className="text-3xl lg:text-4xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+                  Who We Are
+                </h2>
+                <p className="text-base lg:text-lg leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                  We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life's transitions.
+                </p>
+              </div>
+
+              {/* Right Image */}
+              <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden">
+                <Image
+                  src="/images/IMG_2281.jpeg"
+                  alt="Supportive connection and community"
+                  fill
+                  className="object-cover object-center rounded-xl"
+                  sizes="33vw"
+                />
               </div>
             </div>
           </div>
