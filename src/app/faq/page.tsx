@@ -5,27 +5,38 @@ import { Footer } from '@/components/layout/Footer';
 import { faqItems } from '@/lib/constants';
 import { useState } from 'react';
 
-function FAQItem({ item }: { item: typeof faqItems[0] }) {
-  const [isOpen, setIsOpen] = useState(false);
+function FAQItem({ item, defaultOpen }: { item: typeof faqItems[0], defaultOpen: boolean }) {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div className="border-b border-neutral-300 py-4 rounded-lg">
+    <div className="border-b border-neutral-300 py-6 rounded-lg">
+      {/* Mobile: Collapsible button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left flex justify-between items-center py-2 rounded-lg"
+        className="w-full text-left flex justify-between items-center md:hidden"
       >
-        <h3 className="text-lg font-semibold pr-4 font-heading" style={{ color: '#383f51' }}>
+        <h3 className="text-lg md:text-xl font-semibold pr-4 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
           {item.question}
         </h3>
-        <span className="text-2xl font-light flex-shrink-0" style={{ color: '#3c4f76' }}>
-          {isOpen ? '−' : '+'}
+        <span className="text-2xl flex-shrink-0" style={{ color: '#3c4f76' }}>
+          {isOpen ? '▼' : '▶'}
         </span>
       </button>
-      {isOpen && (
-        <div className="mt-4 leading-relaxed text-left rounded-lg" style={{ color: '#383f51' }}>
-          <p>{item.answer}</p>
-        </div>
-      )}
+
+      {/* Desktop: Always expanded with chevron */}
+      <div className="hidden md:flex justify-between items-start">
+        <h3 className="text-xl font-semibold pr-4 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+          {item.question}
+        </h3>
+        <span className="text-xl flex-shrink-0" style={{ color: '#3c4f76' }}>
+          ▼
+        </span>
+      </div>
+
+      {/* Answer - shown on mobile only when open, always shown on desktop */}
+      <div className={`${isOpen ? 'block' : 'hidden'} md:block mt-4 leading-relaxed text-left rounded-lg text-base md:text-lg`} style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+        <p>{item.answer}</p>
+      </div>
     </div>
   );
 }
@@ -35,18 +46,29 @@ export default function FAQ() {
     <div className="min-h-screen bg-background-default flex flex-col">
       <Header />
       
-      <main className="flex-grow py-16 md:py-24 mb-8">
-        <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
-          <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center font-heading" style={{ color: '#383f51' }}>
-            Frequently Asked Questions
-          </h1>
-          
-          <div className="bg-white rounded-lg shadow-sm p-6 md:p-8 mb-8">
-            {faqItems.map((item) => (
-              <FAQItem key={item.id} item={item} />
-            ))}
+      <main className="flex-grow">
+        {/* Header Section */}
+        <section className="bg-background-default py-16 md:py-24">
+          <div className="max-w-4xl mx-auto px-6 md:px-8 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+              Frequently Asked Questions
+            </h1>
+            <p className="text-lg md:text-xl leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+              Find answers to common questions about our therapy services, insurance, and getting started.
+            </p>
           </div>
-        </div>
+        </section>
+
+        {/* FAQ Items Section */}
+        <section className="bg-background-default pb-16 md:pb-24">
+          <div className="max-w-4xl mx-auto px-6 md:px-8">
+            <div className="bg-white rounded-lg shadow-sm p-6 md:p-10">
+              {faqItems.map((item, index) => (
+                <FAQItem key={item.id} item={item} defaultOpen={false} />
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
