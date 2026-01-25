@@ -55,11 +55,11 @@ export default function Home() {
           </div>
 
           {/* Services Boxes - Floating over the background */}
-          <div className="absolute bottom-[40%] left-0 right-0 z-20 w-full -translate-y-[30px]">
+          <div className="absolute bottom-[40%] left-0 right-0 z-20 w-full -translate-y-[20px]">
             <div className="w-full flex justify-center">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-6xl px-6 md:px-8">
                 {/* Postpartum Support */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.5)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.35)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
                   <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#383f51' }}>
                     Postpartum Support
                   </h3>
@@ -69,7 +69,7 @@ export default function Home() {
                 </div>
 
                 {/* Anxiety Relief */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.5)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.35)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
                   <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#383f51' }}>
                     Anxiety Relief
                   </h3>
@@ -79,7 +79,7 @@ export default function Home() {
                 </div>
 
                 {/* Life Transitions */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.5)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.35)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
                   <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#383f51' }}>
                     Life Transitions
                   </h3>
