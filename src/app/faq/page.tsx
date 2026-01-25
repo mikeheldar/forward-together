@@ -7,29 +7,22 @@ import { useState, useEffect } from 'react';
 
 function FAQItem({ item }: { item: typeof faqItems[0] }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMediumOrLarger, setIsMediumOrLarger] = useState(false);
 
   useEffect(() => {
-    // Check if screen is medium or larger
-    const checkScreenSize = () => {
-      setIsMediumOrLarger(window.innerWidth >= 768);
-      setIsOpen(window.innerWidth >= 768);
-    };
-    
-    checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
-    
-    return () => window.removeEventListener('resize', checkScreenSize);
+    // Default to expanded on medium+ screens
+    if (window.innerWidth >= 768) {
+      setIsOpen(true);
+    }
   }, []);
 
   return (
-    <div className="mb-12 rounded-lg">
-      {/* Collapsible button for all screen sizes */}
+    <div className="mb-10 pb-10 border-b border-neutral-200 last:border-b-0 last:pb-0 last:mb-0">
+      {/* Question button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left flex justify-between items-center pb-4"
+        className="w-full text-left flex justify-between items-center gap-4 mb-4"
       >
-        <h3 className="text-lg md:text-xl font-semibold pr-4 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+        <h3 className="text-lg md:text-xl font-semibold font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
           {item.question}
         </h3>
         <span className="text-2xl flex-shrink-0" style={{ color: '#3c4f76' }}>
@@ -37,13 +30,12 @@ function FAQItem({ item }: { item: typeof faqItems[0] }) {
         </span>
       </button>
 
-      {/* Answer - shown when open */}
-      <div className={`${isOpen ? 'block' : 'hidden'} pt-2 pb-12 leading-relaxed text-left rounded-lg text-base md:text-lg`} style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-        <p>{item.answer}</p>
-      </div>
-      
-      {/* Border below with spacing */}
-      <div className="border-b border-neutral-300 mt-4"></div>
+      {/* Answer */}
+      {isOpen && (
+        <div className="text-base md:text-lg leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+          <p>{item.answer}</p>
+        </div>
+      )}
     </div>
   );
 }
@@ -70,7 +62,7 @@ export default function FAQ() {
         <section className="bg-background-default pb-16 md:pb-24">
           <div className="max-w-4xl mx-auto px-6 md:px-8">
             <div className="bg-white rounded-lg shadow-sm p-6 md:p-10">
-              {faqItems.map((item, index) => (
+              {faqItems.map((item) => (
                 <FAQItem key={item.id} item={item} />
               ))}
             </div>
