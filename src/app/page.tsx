@@ -97,8 +97,8 @@ export default function Home() {
         </section>
 
         {/* Who We Are Section */}
-        <section className="bg-background-default w-full" style={{ paddingTop: '40px', paddingBottom: '40px' }}>
-          <div className="max-w-7xl mx-auto px-6 md:px-8 w-full">
+        <section className="bg-background-default w-full" style={{ paddingTop: '40px', paddingBottom: '40px', paddingLeft: '20px', paddingRight: '20px' }}>
+          <div className="max-w-7xl mx-auto w-full">
             {/* Mobile: Stacked Layout */}
             <div className="md:hidden space-y-6">
               <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
