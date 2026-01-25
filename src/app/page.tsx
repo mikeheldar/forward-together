@@ -173,9 +173,17 @@ export default function Home() {
               {testimonials.map((testimonial) => {
                 return (
                   <div key={testimonial.id} className="flex flex-col items-start text-left">
-                    <p className="mb-6 italic leading-relaxed text-base md:text-lg" style={{ color: '#383f51' }}>
+                    {/* Stars at the top */}
+                    <div className="flex items-center mb-4">
+                      {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
+                        <span key={i} className="text-yellow-400 text-lg">★</span>
+                      ))}
+                    </div>
+                    {/* Quote in the middle */}
+                    <p className="mb-6 italic leading-relaxed text-base md:text-lg" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                       {testimonial.quote}
                     </p>
+                    {/* Picture and name at the bottom */}
                     <div className="flex items-center gap-4">
                       <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
                         <Image
@@ -187,14 +195,9 @@ export default function Home() {
                         />
                       </div>
                       <div>
-                        <p className="font-semibold text-base" style={{ color: '#3c4f76' }}>
+                        <p className="font-semibold text-base" style={{ color: '#3c4f76', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                           {testimonial.author}
                         </p>
-                        <div className="flex items-center mt-1">
-                          {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
-                            <span key={i} className="text-yellow-400 text-sm">★</span>
-                          ))}
-                        </div>
                       </div>
                     </div>
                   </div>
