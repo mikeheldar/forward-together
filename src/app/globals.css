@@ -172,9 +172,10 @@
 html h1, html h2, html h3, html h4, html h5, html h6,
 html h1 *, html h2 *, html h3 *, html h4 *, html h5 *, html h6 *,
 html .font-heading,
-html .font-heading * {
+html .font-heading *,
+[style*="font-heading"] {
   font-family: var(--font-open-sans), "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-  font-weight: 700;
+  font-weight: 700 !important;
   line-height: 1.2;
 }
 

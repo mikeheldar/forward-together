@@ -29,10 +29,10 @@ export default function Home() {
           {/* Content */}
           <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-8">
             <div className="flex flex-col items-center text-center py-16 md:py-20">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-12 leading-tight font-heading" style={{ color: '#f4f3ee' }}>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-12 leading-tight font-heading" style={{ color: '#f4f3ee', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
                 Forward Together
               </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl max-w-3xl mx-auto leading-relaxed font-sans" style={{ color: '#f4f3ee', marginBottom: '20px' }}>
+              <p className="text-xl md:text-2xl lg:text-3xl max-w-3xl mx-auto leading-relaxed font-sans" style={{ color: '#f4f3ee', marginBottom: '20px', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                 Compassionate counseling for women at every life stage.
               </p>
               <div className="flex justify-center" style={{ marginBottom: '20px' }}>
@@ -59,31 +59,31 @@ export default function Home() {
             <div className="w-full flex justify-center">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-6xl px-6 md:px-8">
                 {/* Postpartum Support */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.35)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
-                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#383f51' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.2)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
                     Postpartum Support
                   </h3>
-                  <p className="mb-4 text-lg leading-relaxed" style={{ color: '#383f51' }}>
+                  <p className="mb-4 text-lg leading-relaxed" style={{ color: '#f4f3ee', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                     Guidance through motherhood and emotional challenges.
                   </p>
                 </div>
 
                 {/* Anxiety Relief */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.35)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
-                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#383f51' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.2)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
                     Anxiety Relief
                   </h3>
-                  <p className="mb-4 text-lg leading-relaxed" style={{ color: '#383f51' }}>
+                  <p className="mb-4 text-lg leading-relaxed" style={{ color: '#f4f3ee', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                     With support and the right tools, you can learn to quiet your mind and move forward with confidence.
                   </p>
                 </div>
 
                 {/* Life Transitions */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.35)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
-                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#383f51' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(230, 220, 190, 0.2)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
                     Life Transitions
                   </h3>
-                  <p className="mb-4 text-lg leading-relaxed" style={{ color: '#383f51' }}>
+                  <p className="mb-4 text-lg leading-relaxed" style={{ color: '#f4f3ee', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                     Change can be overwhelming—but you don't have to navigate it alone.
                   </p>
                 </div>
