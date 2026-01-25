@@ -9,79 +9,108 @@ export default function About() {
     <div className="min-h-screen bg-background-default flex flex-col">
       <Header />
       
-      <main className="flex-grow py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-          {/* Title */}
-          <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center font-heading" style={{ color: '#383f51' }}>
-            Welcome to Forward Together Therapy
-          </h1>
+      <main className="flex-grow">
+        {/* Hero Section with Image Background */}
+        <section className="relative bg-primary-500 min-h-[500px] md:min-h-[600px] flex items-center justify-center">
+          {/* Background Image */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/images/IMG_2286.jpeg"
+              alt="Person in red sweater holding baby's hand"
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+            />
+          </div>
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-accent-500/40 z-0"></div>
           
-          {/* Two Column Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 mb-16">
-            {/* Left Column - Text Content */}
-            <div className="space-y-8">
+          {/* Content */}
+          <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-8 text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight font-heading" style={{ color: '#f4f3ee', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+              Welcome to Forward Together Therapy
+            </h1>
+            <p className="text-lg md:text-xl lg:text-2xl leading-relaxed" style={{ color: '#f4f3ee', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+              At Forward Together, we provide compassionate counseling for women, specializing in postpartum support, anxiety, and life transitions. Our goal is to foster healing and growth in a nurturing environment.
+            </p>
+          </div>
+        </section>
+
+        {/* Our Mission & Who I Am Section */}
+        <section className="bg-background-default py-16 md:py-24">
+          <div className="max-w-7xl mx-auto px-6 md:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+              {/* Our Mission */}
               <div>
-                <p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: '#383f51' }}>
-                  At Forward Together, we provide compassionate counseling for women, specializing in postpartum support, anxiety, and life transitions. Our goal is to foster healing and growth in a nurturing environment.
-                </p>
-              </div>
-              
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4 font-heading" style={{ color: '#383f51' }}>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
                   Our Mission
                 </h2>
-                <p className="text-base md:text-lg leading-relaxed" style={{ color: '#383f51' }}>
+                <p className="text-base md:text-lg leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                   {aboutContent.text}
                 </p>
               </div>
-            </div>
 
-            {/* Right Column - Image */}
-            <div className="relative w-full aspect-[3/4] md:aspect-[4/5] rounded-xl overflow-hidden">
+              {/* Who I Am */}
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+                  Who I Am
+                </h2>
+                <p className="text-base md:text-lg leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                  I specialize in working with individuals experiencing anxiety, depression, and life stress, with a special focus on supporting women through pregnancy, postpartum, and the many phases of motherhood.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonial Section */}
+        <section className="bg-background-muted py-16 md:py-24">
+          <div className="max-w-3xl mx-auto px-6 md:px-8">
+            <div className="text-center">
+              {/* Stars at top */}
+              <div className="flex items-center justify-center mb-6">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span key={i} className="text-yellow-400 text-2xl">★</span>
+                ))}
+              </div>
+              {/* Quote */}
+              <p className="text-lg md:text-xl italic leading-relaxed mb-8" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                "Forward Together provided the support I needed during a challenging time. Highly recommend their services!"
+              </p>
+              {/* Picture and name */}
+              <div className="flex items-center justify-center gap-4">
+                <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/images/IMG_2281.jpeg"
+                    alt="Emily R."
+                    fill
+                    className="object-cover"
+                    sizes="64px"
+                  />
+                </div>
+                <p className="font-semibold text-lg" style={{ color: '#3c4f76', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                  Emily R.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Additional Image Section */}
+        <section className="bg-background-default py-16 md:py-24">
+          <div className="max-w-5xl mx-auto px-6 md:px-8">
+            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden">
               <Image
-                src="/images/IMG_2286.jpeg"
-                alt="Person in red sweater holding baby's hand"
+                src="/images/intro-background.jpg"
+                alt="A living room with two chairs and a couch"
                 fill
-                className="object-cover object-center rounded-xl"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover rounded-xl"
+                sizes="(max-width: 768px) 100vw, 80vw"
               />
             </div>
           </div>
-
-          {/* Who I Am Section */}
-          <div className="bg-background-muted rounded-lg p-8 md:p-12">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 font-heading" style={{ color: '#383f51' }}>
-              Who I Am
-            </h2>
-            <p className="text-base md:text-lg leading-relaxed" style={{ color: '#383f51' }}>
-              I am a Licensed Clinical Social Worker (LCSW) dedicated to providing compassionate, evidence-based therapy for women navigating life's challenges. I specialize in working with individuals experiencing anxiety, depression, and life stress, with a special focus on supporting women through pregnancy, postpartum, and the many phases of motherhood. My approach is warm, collaborative, and tailored to your unique needs and goals.
-            </p>
-          </div>
-
-          {/* Testimonial */}
-          <div className="mt-16 max-w-2xl mx-auto text-center">
-            <div className="relative w-24 h-24 rounded-full overflow-hidden mx-auto mb-6">
-              <Image
-                src="/images/IMG_2281.jpeg"
-                alt="Emily R."
-                fill
-                className="object-cover"
-                sizes="96px"
-              />
-            </div>
-            <p className="text-base md:text-lg italic leading-relaxed mb-4" style={{ color: '#383f51' }}>
-              "Forward Together provided the support I needed during a challenging time. Highly recommend their services!"
-            </p>
-            <p className="font-semibold" style={{ color: '#3c4f76' }}>
-              Emily R.
-            </p>
-            <div className="flex items-center justify-center mt-2">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <span key={i} className="text-yellow-400 text-lg">★</span>
-              ))}
-            </div>
-          </div>
-        </div>
+        </section>
       </main>
 
       <Footer />
