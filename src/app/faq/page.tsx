@@ -16,12 +16,12 @@ function FAQItem({ item }: { item: typeof faqItems[0] }) {
   }, []);
 
   return (
-    <div style={{ marginBottom: '60px', paddingBottom: '20px', borderBottom: '1px solid #e5e5e5' }} className="last:border-b-0 last:pb-0 last:mb-0">
+    <div style={{ marginBottom: '0px', paddingBottom: '40px', borderBottom: '1px solid #e5e5e5' }} className="last:border-b-0 last:pb-0">
       {/* Question button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left flex justify-between items-center gap-4"
-        style={{ marginBottom: '16px' }}
+        style={{ marginBottom: '16px', paddingTop: '0px' }}
       >
         <h3 className="text-lg md:text-xl font-semibold font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
           {item.question}
