@@ -25,7 +25,7 @@ export function Navigation() {
           <Link href="/" className="flex items-center gap-3 md:gap-4 hover:opacity-80 transition-opacity">
             <div className="relative h-16 w-16 flex-shrink-0">
               <Image
-                src="/images/logo.png"
+                src="/images/leaf_logo.png"
                 alt="Forward Together Logo"
                 fill
                 className="object-contain"
