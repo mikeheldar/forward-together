@@ -93,7 +93,7 @@ export default function Home() {
         </section>
 
         {/* Spacer section to account for the floating boxes */}
-        <section className="bg-background-default pt-24 md:pt-32 w-full rounded-lg">
+        <section className="bg-background-default w-full rounded-lg" style={{ paddingTop: '40px' }}>
         </section>
 
         {/* Who We Are Section */}
