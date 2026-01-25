@@ -3,13 +3,27 @@
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { faqItems } from '@/lib/constants';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-function FAQItem({ item, defaultOpen }: { item: typeof faqItems[0], defaultOpen: boolean }) {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
+function FAQItem({ item }: { item: typeof faqItems[0] }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMediumOrLarger, setIsMediumOrLarger] = useState(false);
+
+  useEffect(() => {
+    // Check if screen is medium or larger
+    const checkScreenSize = () => {
+      setIsMediumOrLarger(window.innerWidth >= 768);
+      setIsOpen(window.innerWidth >= 768);
+    };
+    
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
 
   return (
-    <div className="border-b border-neutral-300 mb-4 rounded-lg">
+    <div className="mb-8 rounded-lg">
       {/* Collapsible button for all screen sizes */}
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -24,9 +38,12 @@ function FAQItem({ item, defaultOpen }: { item: typeof faqItems[0], defaultOpen:
       </button>
 
       {/* Answer - shown when open */}
-      <div className={`${isOpen ? 'block' : 'hidden'} px-0 pb-8 leading-relaxed text-left rounded-lg text-base md:text-lg`} style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+      <div className={`${isOpen ? 'block' : 'hidden'} px-0 pb-10 leading-relaxed text-left rounded-lg text-base md:text-lg`} style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
         <p>{item.answer}</p>
       </div>
+      
+      {/* Border below */}
+      <div className="border-b border-neutral-300"></div>
     </div>
   );
 }
@@ -54,7 +71,7 @@ export default function FAQ() {
           <div className="max-w-4xl mx-auto px-6 md:px-8">
             <div className="bg-white rounded-lg shadow-sm p-6 md:p-10">
               {faqItems.map((item, index) => (
-                <FAQItem key={item.id} item={item} defaultOpen={false} />
+                <FAQItem key={item.id} item={item} />
               ))}
             </div>
           </div>
