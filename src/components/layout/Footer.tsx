@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="rounded-lg" style={{ backgroundColor: '#383f51', color: '#f4f3ee', fontFamily: 'var(--font-heading), "Open Sans", sans-serif' }}>
       <div className="w-full px-6 md:px-8 py-12 md:py-16">
         {/* Three Column Section - Centered Container */}
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto" style={{ marginTop: '10px' }}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8">
             {/* Connect Column */}
             <div className="text-left">
@@ -106,7 +106,7 @@ export function Footer() {
         </div>
 
         {/* Copyright Section */}
-        <div className="text-center pt-6">
+        <div className="text-center" style={{ paddingTop: '34px' }}>
           <p className="text-xs md:text-sm" style={{ color: '#ebe9e7' }}>© 2025. All rights reserved.</p>
         </div>
       </div>
