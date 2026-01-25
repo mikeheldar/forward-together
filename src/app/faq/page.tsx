@@ -10,10 +10,10 @@ function FAQItem({ item, defaultOpen }: { item: typeof faqItems[0], defaultOpen:
 
   return (
     <div className="border-b border-neutral-300 py-6 rounded-lg">
-      {/* Mobile: Collapsible button */}
+      {/* Collapsible button for all screen sizes */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left flex justify-between items-center md:hidden"
+        className="w-full text-left flex justify-between items-center"
       >
         <h3 className="text-lg md:text-xl font-semibold pr-4 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
           {item.question}
@@ -23,18 +23,8 @@ function FAQItem({ item, defaultOpen }: { item: typeof faqItems[0], defaultOpen:
         </span>
       </button>
 
-      {/* Desktop: Always expanded with chevron */}
-      <div className="hidden md:flex justify-between items-start">
-        <h3 className="text-xl font-semibold pr-4 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-          {item.question}
-        </h3>
-        <span className="text-xl flex-shrink-0" style={{ color: '#3c4f76' }}>
-          ▼
-        </span>
-      </div>
-
-      {/* Answer - shown on mobile only when open, always shown on desktop */}
-      <div className={`${isOpen ? 'block' : 'hidden'} md:block mt-4 leading-relaxed text-left rounded-lg text-base md:text-lg`} style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+      {/* Answer - shown when open */}
+      <div className={`${isOpen ? 'block' : 'hidden'} mt-6 leading-relaxed text-left rounded-lg text-base md:text-lg`} style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
         <p>{item.answer}</p>
       </div>
     </div>

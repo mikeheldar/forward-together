@@ -97,28 +97,21 @@ export default function Contact() {
         {/* Client Feedback Section - Purple Background */}
         <section className="bg-background-muted py-16 md:py-24">
           <div className="max-w-6xl mx-auto px-6 md:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-              Client Feedback
-            </h2>
-            <p className="text-lg md:text-xl leading-relaxed text-center max-w-3xl mx-auto mb-16" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-              Hear from our clients about their transformative experiences with therapy.
-            </p>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
               {/* Testimonial 1 */}
-              <div className="flex flex-col items-start text-left">
+              <div className="flex flex-col items-center text-center">
                 {/* Stars at top */}
-                <div className="flex items-center mb-4">
+                <div className="flex items-center justify-center mb-6">
                   {Array.from({ length: 5 }).map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-xl">★</span>
+                    <span key={i} className="text-yellow-400 text-2xl">★</span>
                   ))}
                 </div>
                 {/* Quote */}
-                <p className="text-base md:text-lg italic leading-relaxed mb-6" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                <p className="text-base md:text-lg italic leading-relaxed mb-8" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                   "Forward Together has been a lifeline for me during my postpartum journey."
                 </p>
                 {/* Picture and name */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center gap-4">
                   <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
                     <Image
                       src="/images/IMG_2286.jpeg"
@@ -128,7 +121,7 @@ export default function Contact() {
                       sizes="64px"
                     />
                   </div>
-                  <div>
+                  <div className="text-left">
                     <p className="font-semibold text-base md:text-lg" style={{ color: '#3c4f76', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                       Emily J.
                     </p>
@@ -140,19 +133,19 @@ export default function Contact() {
               </div>
 
               {/* Testimonial 2 */}
-              <div className="flex flex-col items-start text-left">
+              <div className="flex flex-col items-center text-center">
                 {/* Stars at top */}
-                <div className="flex items-center mb-4">
+                <div className="flex items-center justify-center mb-6">
                   {Array.from({ length: 5 }).map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-xl">★</span>
+                    <span key={i} className="text-yellow-400 text-2xl">★</span>
                   ))}
                 </div>
                 {/* Quote */}
-                <p className="text-base md:text-lg italic leading-relaxed mb-6" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                <p className="text-base md:text-lg italic leading-relaxed mb-8" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                   "The support I received helped me navigate my grief and anxiety beautifully."
                 </p>
                 {/* Picture and name */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center gap-4">
                   <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
                     <Image
                       src="/images/IMG_2281.jpeg"
@@ -162,7 +155,7 @@ export default function Contact() {
                       sizes="64px"
                     />
                   </div>
-                  <div>
+                  <div className="text-left">
                     <p className="font-semibold text-base md:text-lg" style={{ color: '#3c4f76', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                       Sarah M.
                     </p>

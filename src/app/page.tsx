@@ -167,24 +167,24 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="bg-background-muted py-16 md:py-24 pb-[50px] w-full rounded-lg">
+        <section className="bg-background-muted py-16 md:py-24 w-full rounded-lg">
           <div className="max-w-6xl mx-auto px-6 md:px-8 w-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
               {testimonials.map((testimonial) => {
                 return (
-                  <div key={testimonial.id} className="flex flex-col items-start text-left">
-                    {/* Stars at the top */}
-                    <div className="flex items-center mb-4">
+                  <div key={testimonial.id} className="flex flex-col items-center text-center">
+                    {/* Stars at the top - centered */}
+                    <div className="flex items-center justify-center mb-6">
                       {Array.from({ length: testimonial.rating || 5 }).map((_, i) => (
-                        <span key={i} className="text-yellow-400 text-lg">★</span>
+                        <span key={i} className="text-yellow-400 text-2xl">★</span>
                       ))}
                     </div>
-                    {/* Quote in the middle */}
-                    <p className="mb-6 italic leading-relaxed text-base md:text-lg" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                    {/* Quote in the middle - centered */}
+                    <p className="mb-8 italic leading-relaxed text-base md:text-lg" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                       {testimonial.quote}
                     </p>
-                    {/* Picture and name at the bottom */}
-                    <div className="flex items-center gap-4">
+                    {/* Picture and name at the bottom - centered */}
+                    <div className="flex items-center justify-center gap-4">
                       <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
                         <Image
                           src={testimonial.image || '/images/IMG_2286.jpeg'}
@@ -194,8 +194,8 @@ export default function Home() {
                           sizes="64px"
                         />
                       </div>
-                      <div>
-                        <p className="font-semibold text-base" style={{ color: '#3c4f76', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                      <div className="text-left">
+                        <p className="font-semibold text-base md:text-lg" style={{ color: '#3c4f76', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                           {testimonial.author}
                         </p>
                       </div>
