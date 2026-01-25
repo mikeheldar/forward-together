@@ -8,147 +8,173 @@ export default function Contact() {
     <div className="min-h-screen bg-background-default flex flex-col">
       <Header />
       
-      <main className="flex-grow py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-          {/* Header */}
-          <div className="mb-16 text-center max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 font-heading" style={{ color: '#383f51' }}>
+      <main className="flex-grow">
+        {/* Header Section */}
+        <section className="bg-background-default py-16 md:py-24">
+          <div className="max-w-4xl mx-auto px-6 md:px-8 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
               Get in Touch
             </h1>
-            <p className="text-base md:text-lg leading-relaxed" style={{ color: '#383f51' }}>
+            <p className="text-lg md:text-xl leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
               We're here to support you. Reach out for inquiries or to schedule an appointment. Your journey towards healing starts with a conversation.
             </p>
           </div>
+        </section>
 
-          {/* Contact Information Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-20">
-            {/* Connect */}
-            <div className="text-center">
-              <h2 className="text-xl font-bold mb-4 font-heading" style={{ color: '#383f51' }}>
-                Connect
-              </h2>
-              <div className="space-y-2">
-                <p className="text-base" style={{ color: '#383f51' }}>
-                  <a 
-                    href={`tel:${siteConfig.contact.phone.replace(/[^\d]/g, '')}`}
-                    className="hover:opacity-80 transition-opacity"
-                    style={{ color: '#3c4f76' }}
-                  >
-                    {siteConfig.contact.phone}
-                  </a>
-                </p>
+        {/* Contact Information Grid */}
+        <section className="bg-background-default py-16 md:py-20">
+          <div className="max-w-6xl mx-auto px-6 md:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+              {/* Connect */}
+              <div className="text-center">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+                  Connect
+                </h2>
+                <div className="space-y-2">
+                  <p className="text-base md:text-lg" style={{ fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                    <a 
+                      href={`tel:${siteConfig.contact.phone.replace(/[^\d]/g, '')}`}
+                      className="hover:opacity-80 transition-opacity"
+                      style={{ color: '#3c4f76' }}
+                    >
+                      {siteConfig.contact.phone}
+                    </a>
+                  </p>
+                </div>
               </div>
-            </div>
 
-            {/* Reach */}
-            <div className="text-center">
-              <h2 className="text-xl font-bold mb-4 font-heading" style={{ color: '#383f51' }}>
-                Reach
-              </h2>
-              <div className="space-y-2">
-                <p className="text-base">
-                  <a 
-                    href={`mailto:${siteConfig.contact.email}`}
-                    className="hover:opacity-80 transition-opacity"
-                    style={{ color: '#3c4f76' }}
-                  >
-                    {siteConfig.contact.email}
-                  </a>
-                </p>
+              {/* Reach */}
+              <div className="text-center">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+                  Reach
+                </h2>
+                <div className="space-y-2">
+                  <p className="text-base md:text-lg" style={{ fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                    <a 
+                      href={`mailto:${siteConfig.contact.email}`}
+                      className="hover:opacity-80 transition-opacity"
+                      style={{ color: '#3c4f76' }}
+                    >
+                      {siteConfig.contact.email}
+                    </a>
+                  </p>
+                </div>
               </div>
-            </div>
 
-            {/* Address */}
-            <div className="text-center">
-              <h2 className="text-xl font-bold mb-4 font-heading" style={{ color: '#383f51' }}>
-                Address
-              </h2>
-              <div className="space-y-1">
-                <p className="text-base" style={{ color: '#383f51' }}>
-                  5775 Glenridge Drive
-                </p>
-                <p className="text-base" style={{ color: '#383f51' }}>
-                  Building B, Suite 310
-                </p>
-                <p className="text-base" style={{ color: '#383f51' }}>
-                  {siteConfig.contact.address.city}, {siteConfig.contact.address.state} {siteConfig.contact.address.zip.split('-')[0]}
-                </p>
+              {/* Address */}
+              <div className="text-center">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+                  Address
+                </h2>
+                <div className="space-y-2">
+                  <p className="text-base md:text-lg" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                    5775 Glenridge Drive
+                  </p>
+                  <p className="text-base md:text-lg" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                    Building B, Suite 310
+                  </p>
+                  <p className="text-base md:text-lg" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                    {siteConfig.contact.address.city}, {siteConfig.contact.address.state} {siteConfig.contact.address.zip.split('-')[0]}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </section>
 
-          {/* Our Location Section */}
-          <div className="mb-20 bg-background-muted rounded-lg p-8 md:p-12">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center font-heading" style={{ color: '#383f51' }}>
+        {/* Our Location Section */}
+        <section className="bg-background-default py-16 md:py-20">
+          <div className="max-w-4xl mx-auto px-6 md:px-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
               Our Location
             </h2>
-            <p className="text-base md:text-lg leading-relaxed text-center max-w-3xl mx-auto" style={{ color: '#383f51' }}>
+            <p className="text-lg md:text-xl leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
               Visit us for compassionate therapy and support tailored for women and families navigating life's challenges.
             </p>
           </div>
+        </section>
 
-          {/* Client Feedback Section */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center font-heading" style={{ color: '#383f51' }}>
+        {/* Client Feedback Section - Purple Background */}
+        <section className="bg-background-muted py-16 md:py-24">
+          <div className="max-w-6xl mx-auto px-6 md:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
               Client Feedback
             </h2>
-            <p className="text-base md:text-lg leading-relaxed text-center max-w-3xl mx-auto mb-12" style={{ color: '#383f51' }}>
+            <p className="text-lg md:text-xl leading-relaxed text-center max-w-3xl mx-auto mb-16" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
               Hear from our clients about their transformative experiences with therapy.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
               {/* Testimonial 1 */}
-              <div className="flex flex-col items-center text-center">
-                <div className="relative w-24 h-24 rounded-full overflow-hidden mb-6">
-                  <Image
-                    src="/images/IMG_2286.jpeg"
-                    alt="Emily J."
-                    fill
-                    className="object-cover"
-                    sizes="96px"
-                  />
+              <div className="flex flex-col items-start text-left">
+                {/* Stars at top */}
+                <div className="flex items-center mb-4">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span key={i} className="text-yellow-400 text-xl">★</span>
+                  ))}
                 </div>
-                <p className="text-base md:text-lg italic leading-relaxed mb-4" style={{ color: '#383f51' }}>
+                {/* Quote */}
+                <p className="text-base md:text-lg italic leading-relaxed mb-6" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                   "Forward Together has been a lifeline for me during my postpartum journey."
                 </p>
-                <p className="font-bold text-base" style={{ color: '#3c4f76' }}>
-                  Emily J.
-                </p>
-                <p className="text-sm text-gray-500 mb-2">East Cobb</p>
-                <div className="flex items-center justify-center">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-lg">★</span>
-                  ))}
+                {/* Picture and name */}
+                <div className="flex items-center gap-4">
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                    <Image
+                      src="/images/IMG_2286.jpeg"
+                      alt="Emily J."
+                      fill
+                      className="object-cover"
+                      sizes="64px"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-base md:text-lg" style={{ color: '#3c4f76', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                      Emily J.
+                    </p>
+                    <p className="text-sm" style={{ color: '#7d726a', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                      East Cobb
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* Testimonial 2 */}
-              <div className="flex flex-col items-center text-center">
-                <div className="relative w-24 h-24 rounded-full overflow-hidden mb-6">
-                  <Image
-                    src="/images/IMG_2281.jpeg"
-                    alt="Sarah M."
-                    fill
-                    className="object-cover"
-                    sizes="96px"
-                  />
+              <div className="flex flex-col items-start text-left">
+                {/* Stars at top */}
+                <div className="flex items-center mb-4">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span key={i} className="text-yellow-400 text-xl">★</span>
+                  ))}
                 </div>
-                <p className="text-base md:text-lg italic leading-relaxed mb-4" style={{ color: '#383f51' }}>
+                {/* Quote */}
+                <p className="text-base md:text-lg italic leading-relaxed mb-6" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
                   "The support I received helped me navigate my grief and anxiety beautifully."
                 </p>
-                <p className="font-bold text-base" style={{ color: '#3c4f76' }}>
-                  Sarah M.
-                </p>
-                <p className="text-sm text-gray-500 mb-2">Sandy Springs</p>
-                <div className="flex items-center justify-center">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-lg">★</span>
-                  ))}
+                {/* Picture and name */}
+                <div className="flex items-center gap-4">
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                    <Image
+                      src="/images/IMG_2281.jpeg"
+                      alt="Sarah M."
+                      fill
+                      className="object-cover"
+                      sizes="64px"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-base md:text-lg" style={{ color: '#3c4f76', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                      Sarah M.
+                    </p>
+                    <p className="text-sm" style={{ color: '#7d726a', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                      Sandy Springs
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
 
       <Footer />
