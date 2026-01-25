@@ -59,31 +59,31 @@ export default function Home() {
             <div className="w-full flex justify-center">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-6xl px-6 md:px-8">
                 {/* Postpartum Support */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.3)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
-                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: '#fffae2', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#383f51' }}>
                     Postpartum Support
                   </h3>
-                  <p className="mb-4 text-lg leading-relaxed" style={{ color: 'rgba(244, 243, 238, 0.9)' }}>
+                  <p className="mb-4 text-lg leading-relaxed" style={{ color: '#383f51' }}>
                     Guidance through motherhood and emotional challenges.
                   </p>
                 </div>
 
                 {/* Anxiety Relief */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.3)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
-                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: '#fffae2', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#383f51' }}>
                     Anxiety Relief
                   </h3>
-                  <p className="mb-4 text-lg leading-relaxed" style={{ color: 'rgba(244, 243, 238, 0.9)' }}>
+                  <p className="mb-4 text-lg leading-relaxed" style={{ color: '#383f51' }}>
                     With support and the right tools, you can learn to quiet your mind and move forward with confidence.
                   </p>
                 </div>
 
                 {/* Life Transitions */}
-                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: 'rgba(60, 79, 118, 0.3)', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
-                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee' }}>
+                <div className="backdrop-blur-sm rounded-lg p-10 md:p-12 shadow-sm text-center" style={{ backgroundColor: '#fffae2', border: '1px solid rgba(244, 243, 238, 0.3)' }}>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-6 font-heading" style={{ color: '#383f51' }}>
                     Life Transitions
                   </h3>
-                  <p className="mb-4 text-lg leading-relaxed" style={{ color: 'rgba(244, 243, 238, 0.9)' }}>
+                  <p className="mb-4 text-lg leading-relaxed" style={{ color: '#383f51' }}>
                     Change can be overwhelming—but you don't have to navigate it alone.
                   </p>
                 </div>
