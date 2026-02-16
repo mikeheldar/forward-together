@@ -39,11 +39,7 @@ export interface SiteConfig {
   contact: ContactInfo;
   pricing: {
     individualSession: number;
-    coupleSession?: number;
   };
-  city: string;
-  psychologyTodayUrl: string;
-  freeConsultation: string;
   simplePractice?: {
     portalUrl?: string;
     bookingUrl?: string;

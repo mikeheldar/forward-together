@@ -1,14 +1,8 @@
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { siteConfig } from '@/lib/site-config';
-import { testimonials } from '@/lib/constants';
+import { testimonials, aboutContent } from '@/lib/constants';
 import Image from 'next/image';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: `Therapy for Women in ${siteConfig.city} | Postpartum & Anxiety Support | Forward Together`,
-  description: `Forward Together offers compassionate therapy for women in ${siteConfig.city}, specializing in postpartum support, anxiety relief, and life transitions. Begin your healing journey today.`,
-};
 
 export default function Home() {
   return (
@@ -35,14 +29,11 @@ export default function Home() {
           {/* Content */}
           <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-8">
             <div className="flex flex-col items-center text-center py-16 md:py-20">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight font-heading" style={{ color: '#f4f3ee', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-                Therapy for Women — Support at Every Stage of Life
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-12 leading-tight font-heading" style={{ color: '#f4f3ee', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+                Forward Together
               </h1>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 font-heading" style={{ color: '#f4f3ee', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-                You Don&apos;t Have to Walk This Journey Alone
-              </h2>
-              <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-sans" style={{ color: '#f4f3ee', marginBottom: '20px', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-                Life brings seasons of joy, challenge, and change — sometimes all at once. Whether you&apos;re adjusting to new motherhood, managing anxiety, navigating grief, or facing a major life transition, Forward Together is here to support you with empathy and practical tools in a safe, welcoming space.
+              <p className="text-xl md:text-2xl lg:text-3xl max-w-3xl mx-auto leading-relaxed font-sans" style={{ color: '#f4f3ee', marginBottom: '20px', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                Compassionate counseling for women at every life stage.
               </p>
               <div className="flex justify-center" style={{ marginBottom: '20px' }}>
                 <div className="spwidget-button-wrapper">
@@ -56,7 +47,7 @@ export default function Home() {
                     data-spwidget-scope-global 
                     data-spwidget-autobind
                   >
-                    Schedule a Free Consultation
+                    Request Appointment
                   </a>
                 </div>
               </div>
@@ -93,7 +84,7 @@ export default function Home() {
                     Life Transitions
                   </h3>
                   <p className="mb-4 text-lg leading-relaxed" style={{ color: '#f4f3ee', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-                    Change can be overwhelming—but you don&apos;t have to navigate it alone.
+                    Change can be overwhelming—but you don't have to navigate it alone.
                   </p>
                 </div>
               </div>
@@ -115,7 +106,7 @@ export default function Home() {
                   Who We Are
                 </h2>
                 <p className="text-base leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-                  We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life&apos;s transitions.
+                  We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life's transitions.
                 </p>
               </div>
               <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
@@ -157,7 +148,7 @@ export default function Home() {
                   Who We Are
                 </h2>
                 <p className="text-base lg:text-lg leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-                  We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life&apos;s transitions.
+                  We offer support with postpartum, anxiety, grief, and family dynamics. Compassionate therapy for women navigating life's transitions.
                 </p>
               </div>
 
@@ -170,49 +161,6 @@ export default function Home() {
                   className="object-cover object-center rounded-xl"
                   sizes="33vw"
                 />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Our Services Section */}
-        <section className="bg-background-default py-16 md:py-24 w-full">
-          <div className="max-w-5xl mx-auto px-6 md:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-              Our Services
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
-              <div>
-                <h3 className="text-xl md:text-2xl font-semibold mb-4 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-                  Postpartum & Motherhood Support
-                </h3>
-                <p className="text-base leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-                  Guidance and emotional care to help you navigate the early months of motherhood and beyond.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl md:text-2xl font-semibold mb-4 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-                  Anxiety & Stress Counseling
-                </h3>
-                <p className="text-base leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-                  Personalized strategies to calm your mind, reduce stress, and restore balance.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl md:text-2xl font-semibold mb-4 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-                  Life Transitions Therapy
-                </h3>
-                <p className="text-base leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-                  Support through life&apos;s milestones, changes, and new beginnings.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl md:text-2xl font-semibold mb-4 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-                  Grief & Loss Support
-                </h3>
-                <p className="text-base leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-                  A compassionate environment to process loss and begin healing.
-                </p>
               </div>
             </div>
           </div>
@@ -255,44 +203,6 @@ export default function Home() {
                   </div>
                 );
               })}
-            </div>
-            <div className="text-center mt-12">
-              <a
-                href={siteConfig.psychologyTodayUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-6 py-3 rounded-lg text-sm font-semibold transition-colors hover:opacity-90 font-sans"
-                style={{ color: '#f4f3ee', backgroundColor: '#3c4f76', fontFamily: 'var(--font-lato), Lato, sans-serif' }}
-              >
-                Read more reviews on Psychology Today
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* Ready to Take the First Step */}
-        <section className="bg-background-default py-16 md:py-24 w-full">
-          <div className="max-w-4xl mx-auto px-6 md:px-8 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-              Ready to Take the First Step?
-            </h2>
-            <p className="text-lg md:text-xl mb-8" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-              Let&apos;s move forward together.
-            </p>
-            <div className="spwidget-button-wrapper">
-              <a 
-                href="https://shelly-eisenstadt.clientsecure.me" 
-                className="spwidget-button inline-block px-10 py-3.5 rounded-full text-sm font-semibold transition-colors font-sans"
-                style={{ color: '#f4f3ee', backgroundColor: '#383f51', fontFamily: 'var(--font-lato), Lato, sans-serif' }}
-                data-spwidget-scope-id="f051a415-c531-4be3-99c8-807ad6df8c3f" 
-                data-spwidget-scope-uri="shelly-eisenstadt" 
-                data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
-                data-spwidget-type="OAR" 
-                data-spwidget-scope-global 
-                data-spwidget-autobind
-              >
-                Schedule a Free Consultation
-              </a>
             </div>
           </div>
         </section>

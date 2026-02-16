@@ -1,13 +1,8 @@
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { aboutContent } from '@/lib/constants';
 import { siteConfig } from '@/lib/site-config';
 import Image from 'next/image';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: `About Shelly Eisenstadt, LCSW | Women's Therapy Specialist in ${siteConfig.city}`,
-  description: `Meet Shelly Eisenstadt, LCSW, a compassionate therapist specializing in maternal mental health, anxiety, and life transitions for women in ${siteConfig.city}. Learn more about her approach.`,
-};
 
 export default function About() {
   return (
@@ -34,7 +29,7 @@ export default function About() {
           {/* Content */}
           <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-8 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight font-heading" style={{ color: '#f4f3ee', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-              Meet Shelly Eisenstadt, {siteConfig.therapist.credentials}
+              Welcome to Forward Together Therapy
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl leading-relaxed" style={{ color: '#f4f3ee', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
               At Forward Together, we provide compassionate counseling for women, specializing in postpartum support, anxiety, and life transitions. Our goal is to foster healing and growth in a nurturing environment.
@@ -42,59 +37,29 @@ export default function About() {
           </div>
         </section>
 
-        {/* Main Content Section with Headshot */}
+        {/* Our Mission & Who I Am Section */}
         <section className="bg-background-default py-16 md:py-24">
-          <div className="max-w-4xl mx-auto px-6 md:px-8">
-            {/* TODO: Replace with shelly-headshot.jpg when available */}
-            <div className="flex justify-center mb-12">
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-xl overflow-hidden">
-                <Image
-                  src="/images/IMG_2286.jpeg"
-                  alt="Shelly Eisenstadt, LCSW - therapist counseling women in Atlanta"
-                  fill
-                  className="object-cover rounded-xl"
-                  sizes="320px"
-                />
+          <div className="max-w-7xl mx-auto px-6 md:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+              {/* Our Mission */}
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+                  Our Mission
+                </h2>
+                <p className="text-base md:text-lg leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                  {aboutContent.text}
+                </p>
               </div>
-            </div>
 
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-              Therapy Tailored to Women&apos;s Unique Journeys
-            </h2>
-            <p className="text-base md:text-lg leading-relaxed mb-12" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-              I believe healing happens when you feel truly seen, heard, and supported. My approach blends empathy with evidence-based methods tailored to your unique needs, creating a collaborative and safe space for growth.
-            </p>
-
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-              About Shelly
-            </h2>
-            <p className="text-base md:text-lg leading-relaxed mb-12" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-              With specialized training in maternal mental health, anxiety, grief, and life transitions, I have the experience to guide women through pivotal moments. Whether you&apos;re a new mother or facing a significant life change, I&apos;m here to help you discover your resilience and clarity.
-            </p>
-
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
-              How I Work
-            </h2>
-            <ul className="list-disc pl-6 space-y-4 mb-12" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-              <li className="text-base md:text-lg leading-relaxed">Collaborative goal-setting focused on your values.</li>
-              <li className="text-base md:text-lg leading-relaxed">Evidence-based practices like CBT and mindfulness.</li>
-              <li className="text-base md:text-lg leading-relaxed">Compassionate support at your pace.</li>
-            </ul>
-
-            <div className="text-center">
-              <a 
-                href="https://shelly-eisenstadt.clientsecure.me" 
-                className="spwidget-button inline-block px-10 py-3.5 rounded-full text-sm font-semibold transition-colors font-sans"
-                style={{ color: '#f4f3ee', backgroundColor: '#383f51', fontFamily: 'var(--font-lato), Lato, sans-serif' }}
-                data-spwidget-scope-id="f051a415-c531-4be3-99c8-807ad6df8c3f" 
-                data-spwidget-scope-uri="shelly-eisenstadt" 
-                data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
-                data-spwidget-type="OAR" 
-                data-spwidget-scope-global 
-                data-spwidget-autobind
-              >
-                Schedule a Consultation
-              </a>
+              {/* Who I Am */}
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading" style={{ color: '#383f51', fontFamily: 'var(--font-open-sans), "Open Sans", sans-serif' }}>
+                  Who I Am
+                </h2>
+                <p className="text-base md:text-lg leading-relaxed" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
+                  I specialize in working with individuals experiencing anxiety, depression, and life stress, with a special focus on supporting women through pregnancy, postpartum, and the many phases of motherhood.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -111,7 +76,7 @@ export default function About() {
               </div>
               {/* Quote */}
               <p className="text-lg md:text-xl italic leading-relaxed mb-8" style={{ color: '#383f51', fontFamily: 'var(--font-lato), "Lato", sans-serif' }}>
-                &quot;Forward Together provided the support I needed during a challenging time. Highly recommend their services!&quot;
+                "Forward Together provided the support I needed during a challenging time. Highly recommend their services!"
               </p>
               {/* Picture and name */}
               <div className="flex items-center justify-center gap-4">
