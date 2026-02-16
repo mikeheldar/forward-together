@@ -65,6 +65,11 @@ export function Footer() {
                   </Link>
                 </p>
                 <p className="text-sm md:text-base">
+                  <Link href="/services" className="hover:opacity-80 transition-opacity" style={{ color: '#ebe9e7' }}>
+                    Services
+                  </Link>
+                </p>
+                <p className="text-sm md:text-base">
                   <Link href="/contact" className="hover:opacity-80 transition-opacity" style={{ color: '#ebe9e7' }}>
                     Contact
                   </Link>
@@ -73,6 +78,17 @@ export function Footer() {
                   <Link href="/faq" className="hover:opacity-80 transition-opacity" style={{ color: '#ebe9e7' }}>
                     FAQ
                   </Link>
+                </p>
+                <p className="text-sm md:text-base">
+                  <a
+                    href={siteConfig.psychologyTodayUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:opacity-80 transition-opacity"
+                    style={{ color: '#ebe9e7' }}
+                  >
+                    Reviews on Psychology Today
+                  </a>
                 </p>
               </div>
             </div>

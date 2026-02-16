@@ -9,10 +9,13 @@ function FAQItem({ item }: { item: typeof faqItems[0] }) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Default to expanded on medium+ screens
-    if (window.innerWidth >= 768) {
-      setIsOpen(true);
-    }
+    // Default to expanded on medium+ screens - defer to avoid synchronous setState in effect
+    const timer = setTimeout(() => {
+      if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+        setIsOpen(true);
+      }
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   return (

@@ -96,34 +96,39 @@ export const heroContent = {
 
 export const faqItems = [
   {
-    id: 'what-is-therapy',
-    question: 'What is therapy?',
-    answer: 'Therapy is a collaborative process where you work with a trained professional to explore your thoughts, feelings, and behaviors in a safe, confidential environment. It provides support, guidance, and tools to help you navigate life\'s challenges and achieve your personal goals.',
-  },
-  {
-    id: 'how-long-are-sessions',
-    question: 'How long are therapy sessions?',
-    answer: 'Individual therapy sessions typically last 50-60 minutes. The frequency of sessions depends on your needs and goals, and we\'ll work together to determine what works best for you.',
-  },
-  {
-    id: 'do-you-take-insurance',
+    id: 'do-you-accept-insurance',
     question: 'Do you accept insurance?',
-    answer: 'I am an out-of-network provider. This means I don\'t directly bill insurance companies, but I can provide you with a superbill that you can submit to your insurance for potential reimbursement. Please check with your insurance provider about your out-of-network mental health benefits.',
+    answer: 'We are out-of-network for most insurance plans but provide superbills to help with reimbursement. Contact your provider to verify coverage.',
   },
   {
-    id: 'what-is-good-faith-estimate',
-    question: 'What is a Good Faith Estimate?',
-    answer: 'Under the No Surprises Act, you have the right to receive a Good Faith Estimate of what your services may cost. This estimate will be provided before your first session and will outline the expected costs of your treatment.',
+    id: 'is-therapy-confidential',
+    question: 'Is therapy confidential?',
+    answer: 'Yes, your privacy is protected by law. Exceptions apply only when safety concerns arise, which we will discuss in your first session.',
   },
   {
-    id: 'how-do-i-get-started',
-    question: 'How do I get started?',
-    answer: 'You can request an appointment through the Client Portal or by contacting me directly. We\'ll start with an initial consultation to discuss your needs and determine if we\'re a good fit for working together.',
+    id: 'how-much-does-therapy-cost',
+    question: 'How much does therapy cost?',
+    answer: 'Our standard fee is $165 per 50-minute session. Sliding scale options may be available.',
+  },
+  {
+    id: 'what-form-of-payment',
+    question: 'What form of payment do you accept?',
+    answer: "We accept credit/debit cards, HSA/FSA cards, Apple Pay, and Google Pay. Payment is due at the time of each session. We'll keep a secure card on file through our HIPAA-compliant platform for convenience.",
+  },
+  {
+    id: 'what-to-expect-first-session',
+    question: 'What can I expect during my first session?',
+    answer: 'Your first appointment is a chance to discuss your goals, ask questions, and establish a plan. The pace is set by you in a safe, supportive environment.',
   },
   {
     id: 'telehealth-available',
     question: 'Are telehealth sessions available?',
     answer: 'Yes! I offer both in-person sessions at my Atlanta office and virtual telehealth sessions for clients across Georgia. Telehealth sessions are conducted via a secure, HIPAA-compliant platform.',
+  },
+  {
+    id: 'what-is-good-faith-estimate',
+    question: 'What is a Good Faith Estimate?',
+    answer: 'Under the No Surprises Act, you have the right to receive a Good Faith Estimate of what your services may cost. This estimate will be provided before your first session and will outline the expected costs of your treatment.',
   },
 ];
 
